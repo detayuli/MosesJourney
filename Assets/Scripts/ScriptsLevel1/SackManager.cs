@@ -16,6 +16,7 @@ public class SackManager : MonoBehaviour
     [SerializeField] private List<PuzzleSlot> brickSlots; // Masukkan 6 slot bata di inspector
     [SerializeField] private Transform trashBinTransform; // Objek tempat sampah
     [SerializeField] private float snapDistance = 1.2f;
+    [SerializeField] private GameObject UIWin;
 
     [Header("Game State")]
     public int totalBricksNeeded = 6;
@@ -66,7 +67,7 @@ public class SackManager : MonoBehaviour
 
         if (currentBricksPlaced >= totalBricksNeeded)
         {
-            Debug.Log("Level Selesai! Semua susunan bata sudah penuh.");
+            UIWin.SetActive(true);
         }
     }
 }

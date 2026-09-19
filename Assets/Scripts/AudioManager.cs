@@ -2,42 +2,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class audiomanager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
-    public static audiomanager Instance { get; private set; }
+    public static AudioManager Instance { get; private set; }
 
     [Header("---------- Audio Sources ----------")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
-    [SerializeField] AudioSource walkSource; // Slot baru untuk suara jalan looping
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioSource voiceOverSource;
 
-    [Header("---------- Audio Clips ----------")]
-    public AudioClip buttonPressSound;
-    public AudioClip walkSound;
-    public AudioClip WinSound;
-    public AudioClip JumpSound;
-    public AudioClip SaberDeaths;
-    public AudioClip SaberLand;
-    public AudioClip typingSound;
-    public AudioClip BGMMusic;
-    public AudioClip PresspSound;
-    public AudioClip SaberPadoru;
-    
-
-    [Header("---------- Scene Music Mapping ----------")]
-    [SerializeField] private List<SceneMusicMapping> sceneMusicMappings;
-
-    private Dictionary<string, AudioClip> sceneMusicDict = new Dictionary<string, AudioClip>();
-    private bool isWalking = false;
-    private bool sfxEnabled = true;
-    private bool musicEnabled = true;
+    [System.Serializable]
+    public class SoundEffect
+    {
+        public string sfxName;
+        public AudioClip clip;
+    }
 
     [System.Serializable]
     public class SceneMusicMapping
     {
-        public List<string> sceneNames;
+        public string musicName;
         public AudioClip musicClip;
+        public List<string> sceneNames;
     }
+
+    [Header("---------- SFX List ----------")]
+    [SerializeField] private List<SoundEffect> sfxList = new List<SoundEffect>();
+
+    [Header("---------- Scene Music Mapping ----------")]
+    [SerializeField] private List<SceneMusicMapping> sceneMusicMappings = new List<SceneMusicMapping>();
+
+    private Dictionary<string, AudioClip> sfxDict = new Dictionary<string, AudioClip>();
+    private Dictionary<string, AudioClip> sceneMusicDict = new Dictionary<string, AudioClip>();
 
     private void Awake()
     {
@@ -45,19 +41,12 @@ public class audiomanager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            InitializeDictionaries();
         }
         else
         {
             Destroy(gameObject);
             return;
-        }
-
-        foreach (var mapping in sceneMusicMappings)
-        {
-            foreach (var sceneName in mapping.sceneNames)
-            {
-                sceneMusicDict[sceneName] = mapping.musicClip;
-            }
         }
 
         SceneManager.activeSceneChanged += OnSceneChanged;
@@ -69,6 +58,32 @@ public class audiomanager : MonoBehaviour
         SceneManager.activeSceneChanged -= OnSceneChanged;
     }
 
+    private void InitializeDictionaries()
+    {
+        // Setup lookup SFX
+        foreach (var sfx in sfxList)
+        {
+            if (!string.IsNullOrEmpty(sfx.sfxName) && sfx.clip != null)
+            {
+                sfxDict[sfx.sfxName] = sfx.clip;
+            }
+        }
+
+        // Setup lookup BGM per scene
+        foreach (var mapping in sceneMusicMappings)
+        {
+            if (mapping.musicClip == null) continue;
+
+            foreach (var sceneName in mapping.sceneNames)
+            {
+                if (!string.IsNullOrEmpty(sceneName))
+                {
+                    sceneMusicDict[sceneName] = mapping.musicClip;
+                }
+            }
+        }
+    }
+
     private void OnSceneChanged(Scene previousScene, Scene newScene)
     {
         PlayMusicInCurrentScene();
@@ -76,11 +91,15 @@ public class audiomanager : MonoBehaviour
 
     public void PlayMusicInCurrentScene()
     {
-        if (!musicEnabled || musicSource == null) return;
+        if (musicSource == null) return;
+
         string currentScene = SceneManager.GetActiveScene().name;
+
         if (sceneMusicDict.TryGetValue(currentScene, out AudioClip targetClip))
         {
+            // Jika musik yang dimainkan sama persis dengan scene saat ini, lagu tetap lanjut (seamless)
             if (musicSource.clip == targetClip && musicSource.isPlaying) return;
+
             musicSource.clip = targetClip;
             musicSource.loop = true;
             musicSource.Play();
@@ -88,33 +107,48 @@ public class audiomanager : MonoBehaviour
         else
         {
             musicSource.Stop();
+            musicSource.clip = null;
         }
     }
 
+    // Play SFX via ID nama (Inspector)
+    public void PlaySFX(string soundName)
+    {
+        if (sfxSource == null) return;
+
+        if (sfxDict.TryGetValue(soundName, out AudioClip clip))
+        {
+            sfxSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.LogWarning($"[AudioManager] SFX dengan nama '{soundName}' tidak ditemukan.");
+        }
+    }
+
+    // Play SFX via Direct Clip
     public void PlaySFX(AudioClip clip)
     {
-        if (SFXSource != null && clip != null && sfxEnabled)
-            SFXSource.PlayOneShot(clip);
+        if (sfxSource != null && clip != null)
+        {
+            sfxSource.PlayOneShot(clip);
+        }
     }
 
-    // Perbaikan HandleWalking untuk looping yang benar
-    public void HandleWalking(bool walking)
+    // VoiceOver Control
+    public void PlayVoiceOver(AudioClip voClip)
     {
-        if (walkSource == null || walkSound == null || !sfxEnabled) return;
-
-        if (walking && !isWalking)
-        {
-            walkSource.clip = walkSound;
-            walkSource.loop = true;
-            walkSource.Play();
-            isWalking = true;
-        }
-        else if (!walking && isWalking)
-        {
-            walkSource.Stop();
-            isWalking = false;
-        }
+        if (voiceOverSource == null || voClip == null) return;
+        voiceOverSource.Stop();
+        voiceOverSource.clip = voClip;
+        voiceOverSource.Play();
     }
 
-    public void HandleButtonPress() => PlaySFX(JumpSound);
+    public void StopVoiceOver()
+    {
+        if (voiceOverSource != null)
+        {
+            voiceOverSource.Stop();
+        }
+    }
 }
