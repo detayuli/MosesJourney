@@ -5,25 +5,24 @@ public class SackManager : MonoBehaviour
 {
     public static SackManager Instance { get; private set; }
 
-    [Header("Item Prefabs")]
-    [SerializeField] private DraggablePiece brickPrefab;
-    [SerializeField] private DraggablePiece stonePrefab;
+    [Header("Level Configuration")]
+    [SerializeField] private LevelPuzzleData levelData;
 
     [Header("Spawn Settings")]
     [SerializeField] private Transform spawnLocation;
 
-    [Header("Target References")]
-    [SerializeField] private List<PuzzleSlot> brickSlots; // Masukkan 6 slot bata di inspector
-    [SerializeField] private Transform trashBinTransform; // Objek tempat sampah
+    [Header("Scene References")]
+    [Tooltip("Kumpulkan semua slot di level ini (baik merah maupun hijau)")]
+    [SerializeField] private List<PuzzleSlot> allSlots; 
+    [SerializeField] private GameObject trashBinObject;
     [SerializeField] private float snapDistance = 1.2f;
     [SerializeField] private GameObject UIWin;
 
-    [Header("Game State")]
-    public int totalBricksNeeded = 6;
+    private int totalBricksNeeded;
     private int currentBricksPlaced = 0;
     private bool hasActivePiece = false;
 
-    public Transform TrashBinTransform => trashBinTransform;
+    public Transform TrashBinTransform => trashBinObject != null ? trashBinObject.transform : null;
     public float SnapDistance => snapDistance;
 
     private void Awake()
@@ -32,25 +31,55 @@ public class SackManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        SetupLevel();
+    }
+
+    private void SetupLevel()
+    {
+        if (levelData == null)
+        {
+            Debug.LogError("Level Data belum dimasukkan ke SackManager!");
+            return;
+        }
+
+        totalBricksNeeded = levelData.totalBricksNeeded;
+        currentBricksPlaced = 0;
+
+        // Nyalakan / matikan tong sampah berdasarkan data level
+        if (trashBinObject != null)
+        {
+            trashBinObject.SetActive(levelData.enableTrashBin);
+        }
+
+        if (UIWin != null) UIWin.SetActive(false);
+    }
+
     private void OnMouseDown()
     {
-        // Cegah klik kalau masih ada item yang belum selesai ditaruh atau game sudah beres
         if (hasActivePiece || currentBricksPlaced >= totalBricksNeeded)
             return;
 
-        SpawnRandomPiece();
+        SpawnPiece();
     }
 
-    private void SpawnRandomPiece()
+    private void SpawnPiece()
     {
+        if (levelData == null) return;
+
+        DraggablePiece prefabToSpawn = levelData.GetRandomPrefab();
+        if (prefabToSpawn == null)
+        {
+            Debug.LogWarning("Pool prefab kosong di Level Data!");
+            return;
+        }
+
         Vector3 spawnPos = spawnLocation != null ? spawnLocation.position : transform.position + Vector3.up * 1.5f;
         spawnPos.z = 0;
 
-        // Random 50:50 bata atau batu
-        DraggablePiece prefabToSpawn = (Random.value > 0.5f) ? brickPrefab : stonePrefab;
-
         DraggablePiece spawned = Instantiate(prefabToSpawn, spawnPos, Quaternion.identity);
-        spawned.Init(brickSlots);
+        spawned.Init(allSlots);
 
         hasActivePiece = true;
     }
@@ -63,11 +92,11 @@ public class SackManager : MonoBehaviour
     public void OnBrickPlaced()
     {
         currentBricksPlaced++;
-        Debug.Log($"Bata terpasang: {currentBricksPlaced}/{totalBricksNeeded}");
+        Debug.Log($"Progres Bata: {currentBricksPlaced}/{totalBricksNeeded}");
 
         if (currentBricksPlaced >= totalBricksNeeded)
         {
-            UIWin.SetActive(true);
+            if (UIWin != null) UIWin.SetActive(true);
         }
     }
 }

@@ -3,7 +3,8 @@ using UnityEngine;
 
 public enum PieceType
 {
-    Brick,
+    RedBrick,
+    GreenBrick,
     Stone
 }
 
@@ -17,6 +18,8 @@ public class DraggablePiece : MonoBehaviour
     private Vector2 offset;
     private List<PuzzleSlot> availableSlots;
     private Collider2D col;
+
+    public PieceType Type => pieceType;
 
     private void Awake()
     {
@@ -58,8 +61,9 @@ public class DraggablePiece : MonoBehaviour
         float snapDist = SackManager.Instance.SnapDistance;
         Transform trashBin = SackManager.Instance.TrashBinTransform;
 
-        // 1. Cek Tong Sampah (Khusus Batu)
-        if (trashBin != null && Vector2.Distance(transform.position, trashBin.position) < snapDist)
+        // 1. Cek Tong Sampah (Khusus Batu dan Tong Sampah sedang aktif di level ini)
+        if (trashBin != null && trashBin.gameObject.activeInHierarchy && 
+            Vector2.Distance(transform.position, trashBin.position) < snapDist)
         {
             if (pieceType == PieceType.Stone)
             {
@@ -70,21 +74,22 @@ public class DraggablePiece : MonoBehaviour
             }
             else
             {
-                Debug.Log("Bata salah ditaruh di tong sampah!");
+                Debug.Log("Bata tidak boleh dibuang ke tong sampah!");
                 FailAndDestroy();
                 return;
             }
         }
 
-        // 2. Cek Slot Bata (Khusus Bata)
-        if (pieceType == PieceType.Brick && availableSlots != null)
+        // 2. Cek Slot Bata (Cocokkan Tipe Bata dengan Tipe Slot)
+        if ((pieceType == PieceType.RedBrick || pieceType == PieceType.GreenBrick) && availableSlots != null)
         {
             PuzzleSlot closestSlot = null;
             float minDistance = float.MaxValue;
 
             foreach (var slot in availableSlots)
             {
-                if (slot != null && !slot.IsPlaced)
+                // Slot harus belum terisi dan tipenya cocok (Merah ke Merah, Hijau ke Hijau)
+                if (slot != null && !slot.IsPlaced && slot.AcceptedType == pieceType)
                 {
                     float dist = Vector2.Distance(transform.position, slot.transform.position);
                     if (dist < minDistance && dist < snapDist)
@@ -97,11 +102,9 @@ public class DraggablePiece : MonoBehaviour
 
             if (closestSlot != null)
             {
-                // Snap posisi bata langsung ke titik slot
                 transform.position = closestSlot.transform.position;
                 isPlaced = true;
 
-                // Matikan collider agar bata yang tertempel tidak bisa di-klik/drag lagi
                 if (col != null) col.enabled = false;
 
                 closestSlot.Placed();
@@ -111,7 +114,7 @@ public class DraggablePiece : MonoBehaviour
             }
         }
 
-        // 3. Jika dilepas di tempat yang salah / tidak pas pada slot
+        // 3. Jika salah tempat / dilepas di sembarang area
         FailAndDestroy();
     }
 
