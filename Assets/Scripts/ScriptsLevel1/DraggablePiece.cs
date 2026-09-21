@@ -1,57 +1,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PieceType
-{
-    RedBrick,
-    GreenBrick,
-    Stone
-}
+public enum PieceType { RedBrick, GreenBrick, Stone }
 
 [RequireComponent(typeof(Collider2D))]
 public class DraggablePiece : MonoBehaviour
 {
     [SerializeField] private PieceType pieceType;
 
-    private bool isDragging = false;
-    private bool isPlaced = false;
-    private Vector2 offset;
+    private bool isDragging, isPlaced;
+    private Vector2 offset, initialPos;
     private List<PuzzleSlot> availableSlots;
     private Collider2D col;
+    private Camera mainCam;
 
     public PieceType Type => pieceType;
 
     private void Awake()
     {
         col = GetComponent<Collider2D>();
+        mainCam = Camera.main;
     }
 
-    public void Init(List<PuzzleSlot> slots)
-    {
-        availableSlots = slots;
-    }
+    private void Start() => initialPos = transform.position;
+
+    public void Init(List<PuzzleSlot> slots) => availableSlots = slots;
 
     private void Update()
     {
         if (isDragging && !isPlaced)
-        {
-            Vector2 mousePos = GetMousePos();
-            transform.position = mousePos - offset;
-        }
+            transform.position = (Vector2)mainCam.ScreenToWorldPoint(Input.mousePosition) - offset;
     }
 
     private void OnMouseDown()
     {
         if (isPlaced) return;
-
         isDragging = true;
-        offset = GetMousePos() - (Vector2)transform.position;
+        offset = (Vector2)mainCam.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
+        AudioManager.Instance?.PlaySFX("DragPuzzle");
     }
 
     private void OnMouseUp()
     {
         if (isPlaced) return;
-
         isDragging = false;
         CheckPlacement();
     }
@@ -61,71 +52,59 @@ public class DraggablePiece : MonoBehaviour
         float snapDist = SackManager.Instance.SnapDistance;
         Transform trashBin = SackManager.Instance.TrashBinTransform;
 
-        // 1. Cek Tong Sampah (Khusus Batu dan Tong Sampah sedang aktif di level ini)
-        if (trashBin != null && trashBin.gameObject.activeInHierarchy && 
-            Vector2.Distance(transform.position, trashBin.position) < snapDist)
+        // 1. Cek Tong Sampah (Semua item bisa dibuang ke sini)
+        if (trashBin && trashBin.gameObject.activeInHierarchy && Vector2.Distance(transform.position, trashBin.position) < snapDist)
         {
-            if (pieceType == PieceType.Stone)
-            {
-                Debug.Log("Batu berhasil dibuang!");
-                SackManager.Instance.OnPieceCleared();
-                Destroy(gameObject);
-                return;
-            }
-            else
-            {
-                Debug.Log("Bata tidak boleh dibuang ke tong sampah!");
-                FailAndDestroy();
-                return;
-            }
+            AudioManager.Instance?.PlaySFX("TrashBin"); // <-- Ganti string SFX-nya di sini
+            SackManager.Instance.OnPieceCleared();
+            Destroy(gameObject);
+            return;
         }
 
-        // 2. Cek Slot Bata (Cocokkan Tipe Bata dengan Tipe Slot)
-        if ((pieceType == PieceType.RedBrick || pieceType == PieceType.GreenBrick) && availableSlots != null)
-        {
-            PuzzleSlot closestSlot = null;
-            float minDistance = float.MaxValue;
+        // 2. Cek Slot Target
+        bool nearAnySlot = false;
 
+        if (availableSlots != null)
+        {
             foreach (var slot in availableSlots)
             {
-                // Slot harus belum terisi dan tipenya cocok (Merah ke Merah, Hijau ke Hijau)
-                if (slot != null && !slot.IsPlaced && slot.AcceptedType == pieceType)
+                if (!slot) continue;
+
+                float dist = Vector2.Distance(transform.position, slot.transform.position);
+
+                if (dist < snapDist)
                 {
-                    float dist = Vector2.Distance(transform.position, slot.transform.position);
-                    if (dist < minDistance && dist < snapDist)
+                    nearAnySlot = true;
+
+                    // Jika slot belum terisi dan tipenya cocok -> Benar
+                    if (!slot.IsPlaced && slot.AcceptedType == pieceType)
                     {
-                        minDistance = dist;
-                        closestSlot = slot;
+                        transform.position = slot.transform.position;
+                        isPlaced = true;
+                        if (col) col.enabled = false;
+
+                        slot.Placed();
+                        AudioManager.Instance?.PlaySFX("RightDrop");
+                        SackManager.Instance.OnBrickPlaced();
+                        SackManager.Instance.OnPieceCleared();
+                        return;
                     }
                 }
             }
-
-            if (closestSlot != null)
-            {
-                transform.position = closestSlot.transform.position;
-                isPlaced = true;
-
-                if (col != null) col.enabled = false;
-
-                closestSlot.Placed();
-                SackManager.Instance.OnBrickPlaced();
-                SackManager.Instance.OnPieceCleared();
-                return;
-            }
         }
 
-        // 3. Jika salah tempat / dilepas di sembarang area
-        FailAndDestroy();
-    }
+        // 3. Penentuan SFX Balik:
+        transform.position = initialPos;
 
-    private void FailAndDestroy()
-    {
-        SackManager.Instance.OnPieceCleared();
-        Destroy(gameObject);
-    }
-
-    private Vector2 GetMousePos()
-    {
-        return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (nearAnySlot)
+        {
+            // Dilepas dekat slot tapi salah jenis atau sudah penuh
+            AudioManager.Instance?.PlaySFX("WrongDrop");
+        }
+        else
+        {
+            // Dilepas di sembarang tempat/tengah layar
+            AudioManager.Instance?.PlaySFX("ResetDrop");
+        }
     }
 }

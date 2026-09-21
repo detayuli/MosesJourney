@@ -67,6 +67,7 @@ public class SackManager : MonoBehaviour
     private void SpawnPiece()
     {
         if (levelData == null) return;
+        AudioManager.Instance?.PlaySFX("SpawnPuzzle"); // <-- Ganti string SFX-nya di sini
 
         DraggablePiece prefabToSpawn = levelData.GetRandomPrefab();
         if (prefabToSpawn == null)
@@ -97,6 +98,7 @@ public class SackManager : MonoBehaviour
         if (currentBricksPlaced >= totalBricksNeeded)
         {
             if (UIWin != null) UIWin.SetActive(true);
+            AudioManager.Instance?.PlaySFX("FinishLevel"); // <-- Ganti string SFX-nya di sini
         }
     }
 }

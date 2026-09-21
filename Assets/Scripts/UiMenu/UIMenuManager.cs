@@ -17,21 +17,24 @@ public class UIMenumanager : MonoBehaviour
     public virtual void MoveToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        ClickSound();
     }
 
     public virtual void QuitGame()
     {
         Application.Quit();
+        ClickSound();
     }
 
     public virtual void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        ClickSound();
     }
 
     public virtual void SkipScene()
     {
-        MoveToScene(SkipSceneName);
+        SceneManager.LoadScene(SkipSceneName);
     }
 
     // Mengatur aktif/tidaknya GameObject secara spesifik (true/false)
@@ -40,6 +43,7 @@ public class UIMenumanager : MonoBehaviour
         if (targetPanel != null)
         {
             targetPanel.SetActive(isActive);
+            ClickSound();
         }
     }
     // Untuk tombol Buka Panel
@@ -48,6 +52,7 @@ public class UIMenumanager : MonoBehaviour
         if (targetPanel != null)
         {   
             targetPanel.SetActive(true);
+            ClickSound();
         }
     }
 
@@ -57,6 +62,7 @@ public class UIMenumanager : MonoBehaviour
         if (targetPanel != null)
         {
             targetPanel.SetActive(false);
+            ClickSound();
         }
     }
 

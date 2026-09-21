@@ -3,57 +3,41 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [Header("Pengaturan Gerakan")]
-    public float jarakGeser = 10f;       // Berapa jauh kamera geser ke kanan
-    public float durasiGeser = 2f;       // Durasi waktu pergeseran (detik)
+    [Header("Pengaturan Target & Waktu")]
+    public Transform targetTujuan;
+    public float durasiGeser = 2f;
+    public float delayVoiceOver = 0.5f; // Atur jeda sebelum VO bersuara (detik)
+    public string voName;
 
     [Header("Referensi UI")]
-    public GameObject skipButtonUI;      // GameObject tombol skip/next
+    public GameObject skipButtonUI;
 
     private void Start()
     {
-        // Pastikan UI skip mati dulu di awal jika belum selesai geser
-        if (skipButtonUI != null)
-        {
-            skipButtonUI.SetActive(false);
-        }
-
-        // Jalankan pergeseran kamera
-        MulaiGeserKamera();
+        if (skipButtonUI) skipButtonUI.SetActive(false);
+        if (!string.IsNullOrEmpty(voName)) StartCoroutine(PlayVODelayed());
+        if (targetTujuan) StartCoroutine(PanCameraRoutine());
     }
 
-    public void MulaiGeserKamera()
+    private IEnumerator PlayVODelayed()
     {
-        StartCoroutine(PanCameraRoutine());
+        if (delayVoiceOver > 0f) yield return new WaitForSeconds(delayVoiceOver);
+        AudioManager.Instance?.PlayVoiceOver(voName);
     }
 
     private IEnumerator PanCameraRoutine()
     {
-        Vector3 posisiAwal = transform.position;
-        // Hanya mengubah sumbu X ke kanan, sumbu Y dan Z tetap sama
-        Vector3 posisiTarget = new Vector3(posisiAwal.x + jarakGeser, posisiAwal.y, posisiAwal.z);
+        Vector3 startPos = transform.position;
+        Vector3 endPos = new Vector3(targetTujuan.position.x, startPos.y, startPos.z);
 
-        float waktuBerjalan = 0f;
-
-        while (waktuBerjalan < durasiGeser)
+        for (float t = 0f; t < durasiGeser; t += Time.deltaTime)
         {
-            waktuBerjalan += Time.deltaTime;
-            float t = waktuBerjalan / durasiGeser;
-
-            // Menggunakan smooth step agar gerakan melambat halus saat mendekati target
-            t = Mathf.SmoothStep(0f, 1f, t);
-
-            transform.position = Vector3.Lerp(posisiAwal, posisiTarget, t);
+            float step = Mathf.SmoothStep(0f, 1f, t / durasiGeser);
+            transform.position = Vector3.Lerp(startPos, endPos, step);
             yield return null;
         }
 
-        // Pastikan posisi persis di target akhir
-        transform.position = posisiTarget;
-
-        // Munculkan UI tombol skip setelah kamera berhenti
-        if (skipButtonUI != null)
-        {
-            skipButtonUI.SetActive(true);
-        }
+        transform.position = endPos;
+        if (skipButtonUI) skipButtonUI.SetActive(true);
     }
 }

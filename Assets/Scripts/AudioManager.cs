@@ -6,15 +6,19 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
-    [Header("---------- Audio Sources ----------")]
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private AudioSource sfxSource;
-    [SerializeField] private AudioSource voiceOverSource;
+    [SerializeField] AudioSource musicSource, sfxSource, voiceOverSource;
 
     [System.Serializable]
     public class SoundEffect
     {
         public string sfxName;
+        public AudioClip clip;
+    }
+
+    [System.Serializable]
+    public class VoiceOverData
+    {
+        public string voName;
         public AudioClip clip;
     }
 
@@ -26,81 +30,65 @@ public class AudioManager : MonoBehaviour
         public List<string> sceneNames;
     }
 
-    [Header("---------- SFX List ----------")]
-    [SerializeField] private List<SoundEffect> sfxList = new List<SoundEffect>();
+    [SerializeField] List<SoundEffect> sfxList = new();
+    [SerializeField] List<VoiceOverData> voiceOverList = new();
+    [SerializeField] List<SceneMusicMapping> sceneMusicMappings = new();
 
-    [Header("---------- Scene Music Mapping ----------")]
-    [SerializeField] private List<SceneMusicMapping> sceneMusicMappings = new List<SceneMusicMapping>();
+    readonly Dictionary<string, AudioClip> sfxDict = new();
+    readonly Dictionary<string, AudioClip> voDict = new();
+    readonly Dictionary<string, AudioClip> sceneMusicDict = new();
 
-    private Dictionary<string, AudioClip> sfxDict = new Dictionary<string, AudioClip>();
-    private Dictionary<string, AudioClip> sceneMusicDict = new Dictionary<string, AudioClip>();
-
-    private void Awake()
+    void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            InitializeDictionaries();
-        }
-        else
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
         }
 
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        InitializeDictionaries();
         SceneManager.activeSceneChanged += OnSceneChanged;
         PlayMusicInCurrentScene();
     }
 
-    private void OnDestroy()
+    void OnDestroy() => SceneManager.activeSceneChanged -= OnSceneChanged;
+
+    void InitializeDictionaries()
     {
-        SceneManager.activeSceneChanged -= OnSceneChanged;
-    }
+        foreach (var s in sfxList)
+            if (!string.IsNullOrEmpty(s.sfxName) && s.clip)
+                sfxDict[s.sfxName] = s.clip;
 
-    private void InitializeDictionaries()
-    {
-        // Setup lookup SFX
-        foreach (var sfx in sfxList)
+        foreach (var v in voiceOverList)
+            if (!string.IsNullOrEmpty(v.voName) && v.clip)
+                voDict[v.voName] = v.clip;
+
+        foreach (var m in sceneMusicMappings)
         {
-            if (!string.IsNullOrEmpty(sfx.sfxName) && sfx.clip != null)
-            {
-                sfxDict[sfx.sfxName] = sfx.clip;
-            }
-        }
+            if (!m.musicClip) continue;
 
-        // Setup lookup BGM per scene
-        foreach (var mapping in sceneMusicMappings)
-        {
-            if (mapping.musicClip == null) continue;
-
-            foreach (var sceneName in mapping.sceneNames)
-            {
-                if (!string.IsNullOrEmpty(sceneName))
-                {
-                    sceneMusicDict[sceneName] = mapping.musicClip;
-                }
-            }
+            foreach (var scene in m.sceneNames)
+                if (!string.IsNullOrEmpty(scene))
+                    sceneMusicDict[scene] = m.musicClip;
         }
     }
 
-    private void OnSceneChanged(Scene previousScene, Scene newScene)
-    {
-        PlayMusicInCurrentScene();
-    }
+    void OnSceneChanged(Scene _, Scene __) => PlayMusicInCurrentScene();
 
     public void PlayMusicInCurrentScene()
     {
-        if (musicSource == null) return;
+        if (!musicSource) return;
 
-        string currentScene = SceneManager.GetActiveScene().name;
+        string scene = SceneManager.GetActiveScene().name;
 
-        if (sceneMusicDict.TryGetValue(currentScene, out AudioClip targetClip))
+        if (sceneMusicDict.TryGetValue(scene, out var clip))
         {
-            // Jika musik yang dimainkan sama persis dengan scene saat ini, lagu tetap lanjut (seamless)
-            if (musicSource.clip == targetClip && musicSource.isPlaying) return;
+            if (musicSource.clip == clip && musicSource.isPlaying) return;
 
-            musicSource.clip = targetClip;
+            musicSource.clip = clip;
             musicSource.loop = true;
             musicSource.Play();
         }
@@ -111,44 +99,38 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Play SFX via ID nama (Inspector)
-    public void PlaySFX(string soundName)
+    public void PlaySFX(string name)
     {
-        if (sfxSource == null) return;
-
-        if (sfxDict.TryGetValue(soundName, out AudioClip clip))
-        {
+        if (sfxSource && sfxDict.TryGetValue(name, out var clip))
             sfxSource.PlayOneShot(clip);
-        }
-        else
-        {
-            Debug.LogWarning($"[AudioManager] SFX dengan nama '{soundName}' tidak ditemukan.");
-        }
+        else if (sfxSource)
+            Debug.LogWarning($"[AudioManager] SFX '{name}' tidak ditemukan.");
     }
 
-    // Play SFX via Direct Clip
     public void PlaySFX(AudioClip clip)
     {
-        if (sfxSource != null && clip != null)
-        {
-            sfxSource.PlayOneShot(clip);
-        }
+        if (sfxSource && clip) sfxSource.PlayOneShot(clip);
     }
 
-    // VoiceOver Control
-    public void PlayVoiceOver(AudioClip voClip)
+    public void PlayVoiceOver(string name)
     {
-        if (voiceOverSource == null || voClip == null) return;
+        if (voDict.TryGetValue(name, out var clip))
+            PlayVoiceOver(clip);
+        else
+            Debug.LogWarning($"[AudioManager] Voice Over '{name}' tidak ditemukan.");
+    }
+
+    public void PlayVoiceOver(AudioClip clip)
+    {
+        if (!voiceOverSource || !clip) return;
+
         voiceOverSource.Stop();
-        voiceOverSource.clip = voClip;
+        voiceOverSource.clip = clip;
         voiceOverSource.Play();
     }
 
     public void StopVoiceOver()
     {
-        if (voiceOverSource != null)
-        {
-            voiceOverSource.Stop();
-        }
+        if (voiceOverSource) voiceOverSource.Stop();
     }
 }
