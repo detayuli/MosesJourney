@@ -16,7 +16,7 @@ MonoBehaviour:
   totalBricksNeeded: 10
   enableTrashBin: 1
   spawnPool:
-  - prefab: {fileID: 5705654032739604750, guid: c4033ec4b6adfbe469a786146afa3499, type: 3}
+  - prefab: {fileID: 5705654032739604750, guid: 258691f1cf06d2e4c8974d3f42d469ea, type: 3}
     weight: 70
   - prefab: {fileID: 2020591082763555283, guid: 6a331e1f5c308cd4b96966e95d214339, type: 3}
     weight: 30
