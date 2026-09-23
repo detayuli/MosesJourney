@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5797054060804417861}
   - component: {fileID: 5705654032739604750}
   m_Layer: 0
-  m_Name: GreenBrick
+  m_Name: BeigeBrick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.7303877, y: 1.046829, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 1.84275, y: 1.701, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2947027, g: 0.7132075, b: 0.36213657, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6adbf49ce45a03446887a84a09da4f6f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -123,17 +123,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.04649532, y: 0.023248196}
+  m_Offset: {x: 0.007900119, y: 0.004665196}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.795, y: 0.98}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.7439282, y: 1.976407}
+  m_Size: {x: 1.6667378, y: 0.8986027}
   m_EdgeRadius: 0
 --- !u!114 &5705654032739604750
 MonoBehaviour:
@@ -147,4 +147,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003b1354f3692e747b19eb404c71c35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieceType: 1
+  pieceType: 0

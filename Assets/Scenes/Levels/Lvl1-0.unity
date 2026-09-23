@@ -180,7 +180,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f0f478cd1ec03a541ac6b8a0aec04a0a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4be29c466bba1584889d7347b15c1bee, type: 2}
   m_sharedMaterial: {fileID: -9116733381251145874, guid: f0f478cd1ec03a541ac6b8a0aec04a0a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -276,8 +276,8 @@ MonoBehaviour:
   lines:
   - text: Mesir dipenuhi Orang-Orang Israel
     duration: 3
-  - text: Raja Mesir yang baru yaitu Raja Firaun takut Orang Israel akan menjadi
-      terlalu banyak dan kuat
+  - text: "Raja Mesir yang baru yaitu Firaun takut \nOrang Israel akan menjadi terlalu
+      banyak dan kuat"
     duration: 5
   - text: Ia pun memperbudak Orang Israel dengan sangat kejam
     duration: 3
@@ -392,7 +392,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: -4802513773966996546, guid: 308f693bebd250b4385de3535646afc8, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:

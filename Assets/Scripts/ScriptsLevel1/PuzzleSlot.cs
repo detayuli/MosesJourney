@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PuzzleSlot : MonoBehaviour
 {
-    [SerializeField] private PieceType acceptedType = PieceType.RedBrick;
+    [SerializeField] private PieceType acceptedType = PieceType.BeigeBrick; // Properti ini yang dipanggil oleh DraggablePiece
 
     // Properti ini yang dipanggil oleh DraggablePiece
     public PieceType AcceptedType => acceptedType;

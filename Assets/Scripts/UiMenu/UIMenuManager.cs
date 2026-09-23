@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class UIMenumanager : MonoBehaviour
 {
+    [Header("Scene Settings")]
     public string SkipSceneName;
 
     private void Update()
     {
-        // Tekan tombol L untuk skip scene
         if (Input.GetKeyDown(KeyCode.L))
         {
             SkipScene();
@@ -37,7 +37,6 @@ public class UIMenumanager : MonoBehaviour
         SceneManager.LoadScene(SkipSceneName);
     }
 
-    // Mengatur aktif/tidaknya GameObject secara spesifik (true/false)
     public virtual void SetActivePanel(GameObject targetPanel, bool isActive)
     {
         if (targetPanel != null)
@@ -46,7 +45,7 @@ public class UIMenumanager : MonoBehaviour
             ClickSound();
         }
     }
-    // Untuk tombol Buka Panel
+
     public virtual void OpenPanel(GameObject targetPanel)
     {
         if (targetPanel != null)
@@ -56,7 +55,6 @@ public class UIMenumanager : MonoBehaviour
         }
     }
 
-    // Untuk tombol Tutup Panel
     public virtual void ClosePanel(GameObject targetPanel)
     {
         if (targetPanel != null)
@@ -68,6 +66,9 @@ public class UIMenumanager : MonoBehaviour
 
     public virtual void ClickSound()
     {
-        AudioManager.Instance.PlaySFX("ClickButton");
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX("ClickButton");
+        }
     }
 }

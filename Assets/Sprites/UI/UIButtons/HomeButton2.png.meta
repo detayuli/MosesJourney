@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 39370eff42b1a3548bd0f810d15a3abb
+guid: d6102d8e26816bf4596ed2c38869fa86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1633874959283500843
-    second: CutsceneLevel1_0
+      213: 7989385685572138919
+    second: HomeButton2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,8 +123,8 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
+    buildTarget: WebGL
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CutsceneLevel1_0
+      name: HomeButton2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4096
-        height: 1536
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d84084916f4359e0800000000000000
-      internalID: -1633874959283500843
+      spriteID: 7a73e1293ffffde60800000000000000
+      internalID: 7989385685572138919
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CutsceneLevel1_0: -1633874959283500843
+      HomeButton2_0: 7989385685572138919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

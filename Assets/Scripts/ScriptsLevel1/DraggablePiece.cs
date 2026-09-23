@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PieceType { RedBrick, GreenBrick, Stone }
+public enum PieceType { BeigeBrick, RedBrick, Stone }
 
 [RequireComponent(typeof(Collider2D))]
 public class DraggablePiece : MonoBehaviour

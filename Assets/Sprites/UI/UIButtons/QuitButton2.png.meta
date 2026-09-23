@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 40048d8b4b12b514bb84bf49bb4c3a01
+guid: 0829c05cba4beb042a97cf21a65e6056
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2666849211671851646
-    second: QuitButton1_0
+      213: -3425790316520967710
+    second: QuitButton2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,11 +122,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: QuitButton1_0
+      name: QuitButton2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28dc4c485c27dfad0800000000000000
-      internalID: -2666849211671851646
+      spriteID: 2e17bc49bd52570d0800000000000000
+      internalID: -3425790316520967710
       vertices: []
       indices: 
       edges: []
@@ -161,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      QuitButton1_0: -2666849211671851646
+      QuitButton2_0: -3425790316520967710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
