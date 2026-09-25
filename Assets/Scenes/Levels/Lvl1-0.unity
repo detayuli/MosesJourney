@@ -861,6 +861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipSceneName: 
+  vfxConfig: {fileID: 11400000, guid: 7b7978003df3f134f9aecebd9a328468, type: 2}
 --- !u!114 &1821261184
 MonoBehaviour:
   m_ObjectHideFlags: 0

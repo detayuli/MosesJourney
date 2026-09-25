@@ -1,10 +1,15 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class UIMenumanager : MonoBehaviour
 {
     [Header("Scene Settings")]
     public string SkipSceneName;
+
+    [Header("VFX Configuration")]
+    [SerializeField] private VFXConfigSO vfxConfig; // Pasang file aset ScriptableObject di sini
 
     private void Update()
     {
@@ -16,20 +21,20 @@ public class UIMenumanager : MonoBehaviour
 
     public virtual void MoveToScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
-        ClickSound();
+        TriggerFeedback();
+        StartCoroutine(LoadSceneWithDelay(sceneName));
     }
 
     public virtual void QuitGame()
     {
-        Application.Quit();
-        ClickSound();
+        TriggerFeedback();
+        StartCoroutine(QuitWithDelay());
     }
 
     public virtual void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        ClickSound();
+        TriggerFeedback();
+        StartCoroutine(LoadSceneWithDelay(SceneManager.GetActiveScene().name));
     }
 
     public virtual void SkipScene()
@@ -41,8 +46,8 @@ public class UIMenumanager : MonoBehaviour
     {
         if (targetPanel != null)
         {
+            TriggerFeedback();
             targetPanel.SetActive(isActive);
-            ClickSound();
         }
     }
 
@@ -50,8 +55,8 @@ public class UIMenumanager : MonoBehaviour
     {
         if (targetPanel != null)
         {   
+            TriggerFeedback();
             targetPanel.SetActive(true);
-            ClickSound();
         }
     }
 
@@ -59,9 +64,15 @@ public class UIMenumanager : MonoBehaviour
     {
         if (targetPanel != null)
         {
+            TriggerFeedback();
             targetPanel.SetActive(false);
-            ClickSound();
         }
+    }
+
+    public virtual void TriggerFeedback()
+    {
+        ClickSound();
+        SpawnSparkle();
     }
 
     public virtual void ClickSound()
@@ -70,5 +81,41 @@ public class UIMenumanager : MonoBehaviour
         {
             AudioManager.Instance.PlaySFX("ClickButton");
         }
+    }
+
+    private void SpawnSparkle()
+    {
+        if (vfxConfig == null) return;
+
+        Vector3 spawnPos;
+        Transform parentTransform = null;
+
+        if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject != null)
+        {
+            GameObject selectedObj = EventSystem.current.currentSelectedGameObject;
+            spawnPos = selectedObj.transform.position;
+            parentTransform = selectedObj.transform.root;
+        }
+        else
+        {
+            spawnPos = Input.mousePosition;
+        }
+
+        // Panggil method spawn langsung dari ScriptableObject
+        vfxConfig.SpawnSparkle(spawnPos, parentTransform);
+    }
+
+    private IEnumerator LoadSceneWithDelay(string sceneName)
+    {
+        float delay = (vfxConfig != null) ? vfxConfig.sceneTransitionDelay : 0.2f;
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    private IEnumerator QuitWithDelay()
+    {
+        float delay = (vfxConfig != null) ? vfxConfig.sceneTransitionDelay : 0.2f;
+        yield return new WaitForSeconds(delay);
+        Application.Quit();
     }
 }

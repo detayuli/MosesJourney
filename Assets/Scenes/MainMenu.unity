@@ -356,6 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipSceneName: Lvl1-0
+  vfxConfig: {fileID: 11400000, guid: 7b7978003df3f134f9aecebd9a328468, type: 2}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +603,7 @@ GameObject:
   - component: {fileID: 835504366}
   - component: {fileID: 835504365}
   - component: {fileID: 835504364}
+  - component: {fileID: 835504367}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -722,6 +724,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835504362}
   m_CullTransparentMesh: 1
+--- !u!95 &835504367
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835504362}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 65684f99af3216a479e310455e3514cf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &875062405
 GameObject:
   m_ObjectHideFlags: 0
