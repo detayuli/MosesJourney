@@ -230,7 +230,7 @@ MonoBehaviour:
   - voName: FinishLvl1-3
     clip: {fileID: 8300000, guid: a48e8cbe44bc0e14d905c81b0fd6932a, type: 3}
   - voName: TutorialLvl1-1
-    clip: {fileID: 8300000, guid: a48e8cbe44bc0e14d905c81b0fd6932a, type: 3}
+    clip: {fileID: 8300000, guid: a769fd4b171f3414389bd4c6279d3319, type: 3}
   sceneMusicMappings:
   - musicName: MainMenu
     musicClip: {fileID: 8300000, guid: b07b21c0ab5bf424ab309688c8a6af7b, type: 3}

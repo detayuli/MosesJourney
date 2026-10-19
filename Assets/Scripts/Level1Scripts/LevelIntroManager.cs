@@ -1,22 +1,29 @@
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
 using System.Collections;
+using UnityEngine;
 
 public class LevelIntroManager : MonoBehaviour
 {
-    [Header("UI References")]
-    [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private GameObject tutorialUIPanel;
-    [SerializeField] private GameObject GuardUI;
+    public static LevelIntroManager Instance { get; private set; }
 
+    [Header("UI References")]
+    [SerializeField] private GameObject tutorialUIPanel;
+    [SerializeField] private GameObject GuardTutorialUI;
+    [SerializeField] private GameObject GuardUI;
+    [SerializeField] private GameObject karung;
 
     [Header("Intro Configuration")]
-    [TextArea(2, 4)]
-    [SerializeField] private string introText = "Hei kamu bangsa Israel, buruan kerja! Susunlah batu bata dengan rapi, buang yang nggak penting, dan ingat... jangan sampai salah pasang!";
-    [SerializeField] private string introVOName = "VOLvl1"; // Nama VO di AudioManager kamu
-    [SerializeField] private float defaultDelayIfNoAudio = 5f;
-    [SerializeField] private float tutorialDelayAfterVO = 0.5f; // Delay tambahan sebelum UI Tutorial muncul setelah VO selesai
+    [SerializeField] private string introVOName;
+    [SerializeField] private float defaultDelayIfNoAudio = 30f; 
+    [SerializeField] private float tutorialDelayAfterVO = 0.5f;
+
+    // Status untuk ngecek apakah intro/tutorial masih jalan
+    public bool IsIntroActive { get; private set; } = true;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
 
     private void Start()
     {
@@ -25,28 +32,24 @@ public class LevelIntroManager : MonoBehaviour
 
     private IEnumerator PlayIntroSequence()
     {
-        // 1. Pastikan UI Tutorial tidak aktif dulu di awal
-        if (tutorialUIPanel != null)
-            tutorialUIPanel.SetActive(false);
+        IsIntroActive = true;
 
-        // 2. Set teks narasi di UI
-        if (dialogueText != null)
-            dialogueText.text = introText;
+        // 1. Setup UI di awal
+        if (tutorialUIPanel != null) tutorialUIPanel.SetActive(false);
+        if (GuardTutorialUI != null) GuardTutorialUI.SetActive(true);
+        if (GuardUI != null) GuardUI.SetActive(false);
+        if (karung != null) karung.SetActive(false);
 
-        // 3. Putar VO via AudioManager
+        // 2. Putar VO via AudioManager
         if (!string.IsNullOrEmpty(introVOName))
         {
             AudioManager.Instance?.PlayVoiceOver(introVOName);
         }
 
-        // 4. Cari durasi audio VO agar UI Tutorial muncul persis setelah VO selesai
-        float waitTime = defaultDelayIfNoAudio;
+        // 3. Tunggu fixed 10 detik (+ delay tambahan kalau ada)
+        yield return new WaitForSeconds(defaultDelayIfNoAudio + tutorialDelayAfterVO);
 
-        // Jika kamu bisa mengambil durasi clip dari AudioManager, tunggu sepanjang durasi VO
-        // Misal tunggu manual atau panggil Coroutine penunggu
-        yield return new WaitForSeconds(waitTime);
-
-        // 5. Setelah VO selesai, tampilkan UI Tutorial
+        // 4. Munculkan UI Tutorial
         ShowTutorialUI();
     }
 
@@ -55,16 +58,24 @@ public class LevelIntroManager : MonoBehaviour
         if (tutorialUIPanel != null)
         {
             tutorialUIPanel.SetActive(true);
+            if (GuardTutorialUI != null) GuardTutorialUI.SetActive(false);
         }
     }
 
-    // Dipanggil melalui OnClick() tombol Next/Close (>>) di UI Tutorial
+    // Dipanggil OnClick() di tombol '>>' UI Tutorial
     public void CloseTutorialUI()
     {
         if (tutorialUIPanel != null)
         {
             tutorialUIPanel.SetActive(false);
-            GuardUI.SetActive(true); // Tampilkan UI Guard setelah tutorial ditutup
+            if (GuardTutorialUI != null) GuardTutorialUI.SetActive(false);
+            if (GuardUI != null) GuardUI.SetActive(true);
+            if (karung != null) karung.SetActive(true);
+            
+            AudioManager.Instance?.PlaySFX("ClickButton");
         }
+
+        // Tandai intro selesai, gameplay di-unlock!
+        IsIntroActive = false;
     }
 }
