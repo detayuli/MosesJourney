@@ -8,8 +8,8 @@ public class UIMenumanager : MonoBehaviour
     [Header("Scene Settings")]
     public string SkipSceneName;
 
-    [Header("VFX Configuration")]
-    [SerializeField] private VFXConfigSO vfxConfig; // Pasang file aset ScriptableObject di sini
+    [Header("Transition Settings")]
+    [SerializeField] private float defaultTransitionDelay = 0.35f;
 
     private void Update()
     {
@@ -19,6 +19,7 @@ public class UIMenumanager : MonoBehaviour
         }
     }
 
+    // Hanya 1 parameter string -> Sekarang muncul di Inspector!
     public virtual void MoveToScene(string sceneName)
     {
         TriggerFeedback();
@@ -42,19 +43,10 @@ public class UIMenumanager : MonoBehaviour
         SceneManager.LoadScene(SkipSceneName);
     }
 
-    public virtual void SetActivePanel(GameObject targetPanel, bool isActive)
-    {
-        if (targetPanel != null)
-        {
-            TriggerFeedback();
-            targetPanel.SetActive(isActive);
-        }
-    }
-
     public virtual void OpenPanel(GameObject targetPanel)
     {
         if (targetPanel != null)
-        {   
+        { 
             TriggerFeedback();
             targetPanel.SetActive(true);
         }
@@ -72,7 +64,20 @@ public class UIMenumanager : MonoBehaviour
     public virtual void TriggerFeedback()
     {
         ClickSound();
-        SpawnSparkle();
+
+        // Otomatis mencari tombol yang baru saja diklik
+        GameObject currentButton = EventSystem.current != null ? EventSystem.current.currentSelectedGameObject : null;
+
+        if (currentButton != null)
+        {
+            // Spawn partikel tepat di posisi tombol dan jadikan tombol sebagai parent
+            VFXManager.Instance?.PlayVFX(VFXType.Sparkle, currentButton.transform.position, currentButton.transform);
+        }
+        else
+        {
+            // Fallback jika diklik pakai touch/mouse langsung
+            VFXManager.Instance?.PlayVFX(VFXType.Sparkle, Input.mousePosition);
+        }
     }
 
     public virtual void ClickSound()
@@ -83,39 +88,15 @@ public class UIMenumanager : MonoBehaviour
         }
     }
 
-    private void SpawnSparkle()
-    {
-        if (vfxConfig == null) return;
-
-        Vector3 spawnPos;
-        Transform parentTransform = null;
-
-        if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject != null)
-        {
-            GameObject selectedObj = EventSystem.current.currentSelectedGameObject;
-            spawnPos = selectedObj.transform.position;
-            parentTransform = selectedObj.transform.root;
-        }
-        else
-        {
-            spawnPos = Input.mousePosition;
-        }
-
-        // Panggil method spawn langsung dari ScriptableObject
-        vfxConfig.SpawnSparkle(spawnPos, parentTransform);
-    }
-
     private IEnumerator LoadSceneWithDelay(string sceneName)
     {
-        float delay = (vfxConfig != null) ? vfxConfig.sceneTransitionDelay : 0.2f;
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(defaultTransitionDelay);
         SceneManager.LoadScene(sceneName);
     }
 
     private IEnumerator QuitWithDelay()
     {
-        float delay = (vfxConfig != null) ? vfxConfig.sceneTransitionDelay : 0.2f;
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(defaultTransitionDelay);
         Application.Quit();
     }
 }

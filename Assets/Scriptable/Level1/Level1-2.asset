@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level1-2
   m_EditorClassIdentifier: 
   levelName: Level 1-2
+  nextLevelToUnlockID: Stage1_Lvl3
   totalBricksNeeded: 10
   enableTrashBin: 1
   spawnPool:

@@ -189,6 +189,48 @@ MonoBehaviour:
   voiceOverList:
   - voName: VOLvl1
     clip: {fileID: 8300000, guid: 3c23900c62e947c49b47c6d047b9b093, type: 3}
+  - voName: Benar1
+    clip: {fileID: 8300000, guid: c0eada71b28ba1645a94cec496237162, type: 3}
+  - voName: Benar2
+    clip: {fileID: 8300000, guid: 90ce04a2ae7c55247a750a9e6452e726, type: 3}
+  - voName: Benar3
+    clip: {fileID: 8300000, guid: 68d3077f46a8afb4a9e10c44a3eca58c, type: 3}
+  - voName: Benar4
+    clip: {fileID: 8300000, guid: d7434bb16ffde7645951f9245459fa17, type: 3}
+  - voName: Benar5
+    clip: {fileID: 8300000, guid: 03f38ad0cf9489e45a4d1d0afd3d835d, type: 3}
+  - voName: Benar6
+    clip: {fileID: 8300000, guid: 47d5bb9719ff12c449bd54865418985b, type: 3}
+  - voName: Salah1
+    clip: {fileID: 8300000, guid: 081287eb6eba95f4899a28ad54c6926e, type: 3}
+  - voName: Salah2
+    clip: {fileID: 8300000, guid: 9e42d04556d634b45851d605045d4e0f, type: 3}
+  - voName: Salah3
+    clip: {fileID: 8300000, guid: 9e42d04556d634b45851d605045d4e0f, type: 3}
+  - voName: Salah4
+    clip: {fileID: 8300000, guid: 6bbee6bbe27ff764fb20f9ded146dbe1, type: 3}
+  - voName: Salah1
+    clip: {fileID: 8300000, guid: 6bbee6bbe27ff764fb20f9ded146dbe1, type: 3}
+  - voName: Salah1
+    clip: {fileID: 8300000, guid: 6bbee6bbe27ff764fb20f9ded146dbe1, type: 3}
+  - voName: BuangSampah1
+    clip: {fileID: 8300000, guid: ce7ca66b110c7cc42b241daeb1ec2eea, type: 3}
+  - voName: BuangSampah2
+    clip: {fileID: 8300000, guid: 09996e3b08cf6444fb07a2c8ea6f567f, type: 3}
+  - voName: BuangSampah3
+    clip: {fileID: 8300000, guid: 9a622ac7818c9354fa9903108ac587cb, type: 3}
+  - voName: BuangSampah4
+    clip: {fileID: 8300000, guid: 9a622ac7818c9354fa9903108ac587cb, type: 3}
+  - voName: BuangSampah5
+    clip: {fileID: 8300000, guid: 69336e4c98360c14f9aeb9d94f2e6618, type: 3}
+  - voName: FinishLvl1-1
+    clip: {fileID: 8300000, guid: 0489dae88481a1c49ab4aeee38c9c1da, type: 3}
+  - voName: FinishLvl1-2
+    clip: {fileID: 8300000, guid: 743d310e9f211b746b0c14347f71b77f, type: 3}
+  - voName: FinishLvl1-3
+    clip: {fileID: 8300000, guid: a48e8cbe44bc0e14d905c81b0fd6932a, type: 3}
+  - voName: TutorialLvl1-1
+    clip: {fileID: 8300000, guid: a48e8cbe44bc0e14d905c81b0fd6932a, type: 3}
   sceneMusicMappings:
   - musicName: MainMenu
     musicClip: {fileID: 8300000, guid: b07b21c0ab5bf424ab309688c8a6af7b, type: 3}
@@ -356,7 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkipSceneName: Lvl1-0
-  vfxConfig: {fileID: 11400000, guid: 7b7978003df3f134f9aecebd9a328468, type: 2}
+  defaultTransitionDelay: 0.35
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1491,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114928063}
   m_CullTransparentMesh: 1
+--- !u!1 &2127362224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2127362226}
+  - component: {fileID: 2127362225}
+  m_Layer: 0
+  m_Name: VFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2127362225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127362224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35576cdd24bc5044ab70241d1b3d614e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vfxConfig: {fileID: 11400000, guid: 7b7978003df3f134f9aecebd9a328468, type: 2}
+--- !u!4 &2127362226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127362224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1458,3 +1545,4 @@ SceneRoots:
   - {fileID: 1519901305}
   - {fileID: 1546147201}
   - {fileID: 137683823}
+  - {fileID: 2127362226}

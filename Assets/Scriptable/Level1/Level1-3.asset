@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Level1-3
   m_EditorClassIdentifier: 
   levelName: Level 1-3
-  totalBricksNeeded: 16
+  totalBricksNeeded: 12
   enableTrashBin: 1
   spawnPool:
-  - prefab: {fileID: 5705654032739604750, guid: c4033ec4b6adfbe469a786146afa3499, type: 3}
-    weight: 45
+  - prefab: {fileID: 5705654032739604750, guid: 28af59a6813252346ac6a16933b9c4c4, type: 3}
+    weight: 40
   - prefab: {fileID: 5705654032739604750, guid: f53e0f102cfb767438574afefba73856, type: 3}
-    weight: 35
+    weight: 40
   - prefab: {fileID: 2020591082763555283, guid: 6a331e1f5c308cd4b96966e95d214339, type: 3}
     weight: 20
