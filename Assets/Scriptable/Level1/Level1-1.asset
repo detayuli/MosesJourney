@@ -15,7 +15,7 @@ MonoBehaviour:
   levelName: Level 1-1
   nextLevelToUnlockID: Stage1_Lvl2
   totalBricksNeeded: 6
-  enableTrashBin: 0
+  enableTrashBin: 1
   spawnPool:
   - prefab: {fileID: 5705654032739604750, guid: c4033ec4b6adfbe469a786146afa3499, type: 3}
     weight: 100

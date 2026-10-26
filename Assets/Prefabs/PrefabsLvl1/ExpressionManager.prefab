@@ -202,40 +202,40 @@ MonoBehaviour:
   angrySprite: {fileID: -4368565924425455695, guid: f14418a044d3fae45822301ea67f57d6, type: 3}
   dialogueText: {fileID: 6218725023170596816}
   benarList:
-  - text: Bagus, udah pas
-    voName: Benar1
   - text: Oke lanjut
-    voName: Benar2
+    voEventPath: event:/VoiceOver/Gameplay/Benar/Benar
   - text: gitu dong bener
-    voName: Benar3
+    voEventPath: event:/VoiceOver/Gameplay/Benar/Benar 2
   - text: ayo pasang lagi
-    voName: Benar4
+    voEventPath: event:/VoiceOver/Gameplay/Benar/Benar 3
   - text: masih banyak yang kosong nih
-    voName: Benar5
-  - text: Baru satu, terusin
-    voName: Benar6
+    voEventPath: event:/VoiceOver/Gameplay/Benar/Benar 4
+  - text: Baru satu, ayo terusin
+    voEventPath: event:/VoiceOver/Gameplay/Benar/Benar 5
+  - text: Bagus, Udah pas
+    voEventPath: event:/VoiceOver/Gameplay/Benar/Benar 6
   salahList:
   - text: Bukan disitu woi
-    voName: Salah1
+    voEventPath: event:/VoiceOver/Gameplay/Salah/Salah
   - text: Salah tempat tuh
-    voName: Salah2
+    voEventPath: event:/VoiceOver/Gameplay/Salah/Salah 2
   - text: lah kok disitu?
-    voName: Salah3
-  - text: Jangan asal taruh
-    voName: Salah4
-  - text: buang di tempat sampah woi
-    voName: Salah5
+    voEventPath: event:/VoiceOver/Gameplay/Salah/Salah 3
+  - text: Jangan asal taruh woi
+    voEventPath: event:/VoiceOver/Gameplay/Salah/Salah 4
+  - text: buang di tempat sampah
+    voEventPath: event:/VoiceOver/Gameplay/Salah/Salah 5
   buangSampahList:
-  - text: Buang-buang terus!
-    voName: BuangSampah1
   - text: Gitu dong, buang sampahnya!
-    voName: BuangSampah2
+    voEventPath: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
   - text: Hobi banget buang-buang
-    voName: BuangSampah3
+    voEventPath: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
   - text: Buset, dibuang semua!
-    voName: BuangSampah4
+    voEventPath: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
   - text: Singkirin yang gk penting
-    voName: BuangSampah5
+    voEventPath: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+  - text: Buang-buang terus!
+    voEventPath: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
 --- !u!1 &8245661731487878915
 GameObject:
   m_ObjectHideFlags: 0

@@ -860,7 +860,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2016637604}
   - component: {fileID: 2016637603}
-  - component: {fileID: 2016637605}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -906,11 +905,11 @@ MonoBehaviour:
   - musicName: GameplayLvl1
     musicEvent:
       Guid:
-        Data1: 1636343529
-        Data2: 1307380829
-        Data3: -1821134427
-        Data4: -836775759
-      Path: event:/Music/Cutscene
+        Data1: 1750266059
+        Data2: 1225447609
+        Data3: 1230929800
+        Data4: 1214623088
+      Path: event:/Music/GameplayLvl1
     sceneNames:
     - Lvl1-1
     - Lvl1-2
@@ -930,37 +929,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2016637605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016637602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -333310169
-      Data2: 1306264745
-      Data3: 1837285567
-      Data4: 1722477533
-    Path: event:/Music/MainMenu
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &2114928063
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class SackManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class SackManager : MonoBehaviour
     [SerializeField] private GameObject trashBinObject;
     [SerializeField] private float snapDistance = 1.2f;
     [SerializeField] private GameObject UIWin;
-    [SerializeField] private string winVOName = "FinishLevel1";
+    [SerializeField] EventReference winVOName;
     [SerializeField] private GameObject tutorialUIPanel;
 
     private int totalBricksNeeded;
@@ -76,7 +77,7 @@ public class SackManager : MonoBehaviour
     private void SpawnPiece()
     {
         if (levelData == null) return;
-        AudioManager.Instance?.PlaySFX("SpawnPuzzle");
+        AudioManager.Instance?.PlaySFX("event:/SFX/SFXLvl1/OpenSack");
 
         DraggablePiece prefabToSpawn = levelData.GetRandomPrefab();
         if (prefabToSpawn == null)
@@ -110,7 +111,7 @@ public class SackManager : MonoBehaviour
             if (UIWin != null) UIWin.SetActive(true);
             
             // SFX Level Selesai
-            AudioManager.Instance?.PlaySFX("FinishLevel");
+            AudioManager.Instance?.PlaySFX("event:/SFX/SFXLvl1/FinishLevel");
 
             // Play VO Finish dari AudioManager (Ganti "VOFinish" sesuai nama VO finish di AudioManager kamu)
             AudioManager.Instance?.PlayVoiceOver(winVOName);

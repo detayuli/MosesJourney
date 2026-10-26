@@ -967,7 +967,13 @@ MonoBehaviour:
   targetTujuan: {fileID: 267670699}
   durasiGeser: 21
   delayVoiceOver: 0
-  voName: EpilogLvl1
+  voName:
+    Guid:
+      Data1: 303546289
+      Data2: 1280814525
+      Data3: -1718529652
+      Data4: 998209865
+    Path: event:/VoiceOver/Dialogs/EpilogLvl1
   nextLevelToUnlockID: '-'
   gunakanZoom: 0
   targetZoomSize: 3.5

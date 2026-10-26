@@ -964,7 +964,14 @@ MonoBehaviour:
   targetTujuan: {fileID: 267670699}
   durasiGeser: 19
   delayVoiceOver: 1.5
-  voName: VOLvl1
+  voName:
+    Guid:
+      Data1: 1808650510
+      Data2: 1122449347
+      Data3: 1989267335
+      Data4: -2005120914
+    Path: event:/VoiceOver/Dialogs/CutsceneLvl1
+  nextLevelToUnlockID: Stage1_Lvl1
   gunakanZoom: 1
   targetZoomSize: 2.5
   skipButtonUI: {fileID: 459643844}

@@ -296,7 +296,13 @@ MonoBehaviour:
   trashBinObject: {fileID: 1209842727}
   snapDistance: 1.2
   UIWin: {fileID: 594803845}
-  winVOName: FinishLvl1-3
+  winVOName:
+    Guid:
+      Data1: -1895007512
+      Data2: 1195962125
+      Data3: 1398888089
+      Data4: 217325372
+    Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
   tutorialUIPanel: {fileID: 0}
 --- !u!114 &114343350
 MonoBehaviour:

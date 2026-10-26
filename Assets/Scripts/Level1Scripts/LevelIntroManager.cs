@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity;
 
 public class LevelIntroManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class LevelIntroManager : MonoBehaviour
     [SerializeField] private GameObject GuardUI;
 
     [Header("Intro Configuration")]
-    [SerializeField] private string introVOName;
+    [SerializeField] private EventReference introVOEvent;
     [SerializeField] private float defaultDelayIfNoAudio = 30f; 
     [SerializeField] private float tutorialDelayAfterVO = 0.5f;
 
@@ -38,10 +39,7 @@ public class LevelIntroManager : MonoBehaviour
         if (GuardTutorialUI != null) GuardTutorialUI.SetActive(true);
         if (GuardUI != null) GuardUI.SetActive(false);
         // 2. Putar VO via AudioManager
-        if (!string.IsNullOrEmpty(introVOName))
-        {
-            AudioManager.Instance?.PlayVoiceOver(introVOName);
-        }
+            AudioManager.Instance?.PlayVoiceOver(introVOEvent);
 
         // 3. Tunggu fixed 10 detik (+ delay tambahan kalau ada)
         yield return new WaitForSeconds(defaultDelayIfNoAudio + tutorialDelayAfterVO);

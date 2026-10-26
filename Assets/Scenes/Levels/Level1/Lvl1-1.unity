@@ -436,7 +436,13 @@ MonoBehaviour:
   trashBinObject: {fileID: 1906122080}
   snapDistance: 1.2
   UIWin: {fileID: 158591962}
-  winVOName: FinishLvl1-1
+  winVOName:
+    Guid:
+      Data1: -1456710173
+      Data2: 1187701035
+      Data3: -718423910
+      Data4: 145620157
+    Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
   tutorialUIPanel: {fileID: 1741601383}
 --- !u!114 &114343350
 MonoBehaviour:
@@ -1478,7 +1484,13 @@ MonoBehaviour:
   tutorialUIPanel: {fileID: 1741601383}
   GuardTutorialUI: {fileID: 81320947}
   GuardUI: {fileID: 3869015147403106644}
-  introVOName: TutorialLvl1-1
+  introVOEvent:
+    Guid:
+      Data1: 371091453
+      Data2: 1169587685
+      Data3: -1683053173
+      Data4: 145437486
+    Path: event:/VoiceOver/Dialogs/TutorialLvl1
   defaultDelayIfNoAudio: 10
   tutorialDelayAfterVO: 0.5
 --- !u!4 &1846895072

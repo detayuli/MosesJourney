@@ -37,7 +37,7 @@ public class LevelButtonUI : MonoBehaviour
 
     private void OnLevelClicked()
     {
-        AudioManager.Instance?.PlaySFX("ButtonClick"); // Sesuaikan jika ada SFX
+        AudioManager.Instance?.PlaySFX("event:/SFX/SFXLvl1/ButtonClick"); // Sesuaikan jika ada SFX
         SceneManager.LoadScene(levelData.sceneToLoad);
     }
 }

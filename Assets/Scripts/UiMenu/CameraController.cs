@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity;
 
 public class CameraController : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class CameraController : MonoBehaviour
     public Transform targetTujuan;
     public float durasiGeser = 2f;
     public float delayVoiceOver = 0.5f;
-    public string voName;
+    public EventReference voName; // Nama VO yang akan diputar saat kamera mulai bergerak
     public string nextLevelToUnlockID = "Stage1_Lvl1"; // ID level berikutnya yang akan dibuka setelah kamera selesai bergerak
 
     [Header("Pengaturan Zoom")]
@@ -28,7 +29,7 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         if (skipButtonUI) skipButtonUI.SetActive(false);
-        if (!string.IsNullOrEmpty(voName)) StartCoroutine(PlayVODelayed());
+        StartCoroutine(PlayVODelayed());
         if (targetTujuan) StartCoroutine(PanCameraRoutine());
     }
 
