@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="Workspace" id="{17355c74-87ef-4f96-97e9-76fb2ee6b84c}">
+		<property name="builtBanksOutputDirectory">
+			<value>D:/Yudha Data/tugas/PENS/Tugas Akhir/MosesJourney/FMOD</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{ec6aa03c-26ee-47e0-a9ae-9b831a600088}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{bfd175c7-88b3-4468-81b2-8921a8a6ac95}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{d56115d0-cab9-4e4e-a223-1f015c3cd1ee}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{94952b26-c128-4467-8796-a3caecf197d1}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{2f34cf70-3fef-4098-8925-e20d49596bb7}</destination>
+		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{2ac194b1-7d2b-4f68-aa98-e9d240edc444}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{b91ab06f-47ad-40b0-82d9-bd95f7c8f007}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{94f791ef-547b-4327-9f3b-e40bf8c435d8}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{553696d4-45c0-462b-8678-e8a6ca050df3}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{b339588e-c794-463e-baea-52bf3c8f3f27}</destination>
+		</relationship>
+	</object>
+</objects>

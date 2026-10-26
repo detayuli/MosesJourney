@@ -37,7 +37,7 @@ public class DraggablePiece : MonoBehaviour
         if (isPlaced) return;
         isDragging = true;
         offset = (Vector2)mainCam.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
-        AudioManager.Instance?.PlaySFX("DragPuzzle");
+        AudioManager.Instance?.PlaySFX("event:/SFX/UISFX/DragPuzzle");
     }
 
     private void OnMouseUp()
@@ -59,7 +59,7 @@ private void CheckPlacement()
 
             if (trashCol != null && (col.IsTouching(trashCol) || trashCol.OverlapPoint(transform.position)))
             {
-                AudioManager.Instance?.PlaySFX("TrashBin");
+                AudioManager.Instance?.PlaySFX("event:/SFX/UISFX/TrashBin");
                 
                 GuardManager.Instance?.TriggerGuardReaction(GuardActionType.BuangSampah);
 
@@ -92,7 +92,7 @@ private void CheckPlacement()
                         if (col) col.enabled = false;
 
                         slot.Placed();
-                        AudioManager.Instance?.PlaySFX("RightDrop");
+                        AudioManager.Instance?.PlaySFX("event:/SFX/UISFX/RightDrop");
 
                         // 1. Hitung progres bata terlebih dahulu
                         SackManager.Instance.OnBrickPlaced();
@@ -116,12 +116,12 @@ private void CheckPlacement()
 
         if (nearAnySlot)
         {
-            AudioManager.Instance?.PlaySFX("WrongDrop");
+            AudioManager.Instance?.PlaySFX("event:/SFX/UISFX/WrongDrop");
             GuardManager.Instance?.TriggerGuardReaction(GuardActionType.Salah);
         }
         else
         {
-            AudioManager.Instance?.PlaySFX("ResetDrop");
+            AudioManager.Instance?.PlaySFX("event:/SFX/UISFX/ResetDrop");
         }
     }
 }

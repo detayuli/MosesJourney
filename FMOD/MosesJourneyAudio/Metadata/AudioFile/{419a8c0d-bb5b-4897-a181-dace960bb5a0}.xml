@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{419a8c0d-bb5b-4897-a181-dace960bb5a0}">
+		<property name="assetPath">
+			<value>SFX/SFXLvl1/DropReset.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.27083333333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b91ab06f-47ad-40b0-82d9-bd95f7c8f007}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,2912 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9218347367133580470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
+  Guid:
+    Data1: -2090852718
+    Data2: 1329377679
+    Data3: -1380864882
+    Data4: -944418000
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-9195283050490960685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 3
+  Guid:
+    Data1: -1209484659
+    Data2: 1167025651
+    Data3: 145196705
+    Data4: -1419207998
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-9029840698459202943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar
+  Guid:
+    Data1: -1845999639
+    Data2: 1108672439
+    Data3: 1100013471
+    Data4: 282870797
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8871467421947683674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 2
+  Guid:
+    Data1: 315657063
+    Data2: 1083797950
+    Data3: -1488424315
+    Data4: 635372719
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8569714407525361449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/FinishLevel
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/FinishLevel
+  Guid:
+    Data1: -1595074919
+    Data2: 1230913015
+    Data3: -777214553
+    Data4: 1419189296
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8029804733244236681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 3
+  Guid:
+    Data1: 1902763177
+    Data2: 1163980148
+    Data3: 218905776
+    Data4: 1549130676
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7565054208739443286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar
+  Guid:
+    Data1: -1845999639
+    Data2: 1108672439
+    Data3: 1100013471
+    Data4: 282870797
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7208378379106720928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639286292740310874
+  FileSizes:
+  - Name: 
+    Value: 2320
+  Exists: 1
+--- !u!114 &-7129641930737664503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
+  Guid:
+    Data1: -2090852718
+    Data2: 1329377679
+    Data3: -1380864882
+    Data4: -944418000
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7120361453845892408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
+  Guid:
+    Data1: -1895007512
+    Data2: 1195962125
+    Data3: 1398888089
+    Data4: 217325372
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6815609158558038349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-2
+  Guid:
+    Data1: 2088335722
+    Data2: 1275254077
+    Data3: -189146986
+    Data4: 804280141
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6487552692920827885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
+  Guid:
+    Data1: 552189662
+    Data2: 1234958787
+    Data3: 1436829100
+    Data4: 607438931
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6458800305281176274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 2
+  Guid:
+    Data1: 315657063
+    Data2: 1083797950
+    Data3: -1488424315
+    Data4: 635372719
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5941156460230512819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+  Guid:
+    Data1: -898870395
+    Data2: 1128906112
+    Data3: -1277167468
+    Data4: -144578355
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5823768079270414088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+  Guid:
+    Data1: -898870395
+    Data2: 1128906112
+    Data3: -1277167468
+    Data4: -144578355
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5755800242579075933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/TutorialLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/TutorialLvl1
+  Guid:
+    Data1: 371091453
+    Data2: 1169587685
+    Data3: -1683053173
+    Data4: 145437486
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5684477340914548752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 4
+  Guid:
+    Data1: 1786410205
+    Data2: 1313451169
+    Data3: -1076044122
+    Data4: 1088207176
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5560839425251350182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
+  Guid:
+    Data1: 304991900
+    Data2: 1326083029
+    Data3: -157133900
+    Data4: 48857373
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5474055294671651602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/TutorialLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/TutorialLvl1
+  Guid:
+    Data1: 371091453
+    Data2: 1169587685
+    Data3: -1683053173
+    Data4: 145437486
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5355603059882831239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
+  Guid:
+    Data1: 304991900
+    Data2: 1326083029
+    Data3: -157133900
+    Data4: 48857373
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5236339251677125623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Cutscene
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Cutscene
+  Guid:
+    Data1: 1636343529
+    Data2: 1307380829
+    Data3: -1821134427
+    Data4: -836775759
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 163660
+--- !u!114 &-4885489249236513520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/Trashbin
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/Trashbin
+  Guid:
+    Data1: 1663715245
+    Data2: 1203431878
+    Data3: -972986747
+    Data4: 1575574370
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4881970218056526556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/OpenSack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/OpenSack
+  Guid:
+    Data1: 1037634432
+    Data2: 1167868240
+    Data3: 1641420476
+    Data4: 1000006003
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4796541256101286079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 2
+  Guid:
+    Data1: -1711542676
+    Data2: 1116738058
+    Data3: 356818579
+    Data4: -2032423194
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4681491292220383128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
+  Guid:
+    Data1: -1456710173
+    Data2: 1187701035
+    Data3: -718423910
+    Data4: 145620157
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4584941226968373694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/FinishLevel
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/FinishLevel
+  Guid:
+    Data1: -1595074919
+    Data2: 1230913015
+    Data3: -777214553
+    Data4: 1419189296
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4514226994028878872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/DropReset
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/DropReset
+  Guid:
+    Data1: 385323237
+    Data2: 1210597332
+    Data3: -1225516892
+    Data4: -586306158
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4440398002655662363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 5
+  Guid:
+    Data1: -1241688907
+    Data2: 1092221301
+    Data3: -598545240
+    Data4: 1750615055
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4224115601571206909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/DropReset
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/DropReset
+  Guid:
+    Data1: 385323237
+    Data2: 1210597332
+    Data3: -1225516892
+    Data4: -586306158
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4102645842623602386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
+  Guid:
+    Data1: -2090852718
+    Data2: 1329377679
+    Data3: -1380864882
+    Data4: -944418000
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3850007074914617249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/WrongDrop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/WrongDrop
+  Guid:
+    Data1: 569137656
+    Data2: 1175411054
+    Data3: 1222355866
+    Data4: 713138601
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3828180623026467704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/DragPuzzle
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/DragPuzzle
+  Guid:
+    Data1: 968629653
+    Data2: 1265864964
+    Data3: -2117356625
+    Data4: -534042541
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3594670722038852764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Cutscene
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Cutscene
+  Guid:
+    Data1: 1636343529
+    Data2: 1307380829
+    Data3: -1821134427
+    Data4: -836775759
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 163660
+--- !u!114 &-3417334988364304799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
+  Guid:
+    Data1: -1456710173
+    Data2: 1187701035
+    Data3: -718423910
+    Data4: 145620157
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3316352488949213962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
+  Guid:
+    Data1: -1895007512
+    Data2: 1195962125
+    Data3: 1398888089
+    Data4: 217325372
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3107896590066676760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
+  Guid:
+    Data1: -1456710173
+    Data2: 1187701035
+    Data3: -718423910
+    Data4: 145620157
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2832184994500052042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MainMenu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MainMenu
+  Guid:
+    Data1: -333310169
+    Data2: 1306264745
+    Data3: 1837285567
+    Data4: 1722477533
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150099
+--- !u!114 &-2383763921411272266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 4
+  Guid:
+    Data1: -328982053
+    Data2: 1186154361
+    Data3: 1524876217
+    Data4: -1280115001
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2120915812692625619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/RightDrop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/RightDrop
+  Guid:
+    Data1: 1129183557
+    Data2: 1293065855
+    Data3: -854828102
+    Data4: -1529165433
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1966233122056328153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
+  Guid:
+    Data1: 552189662
+    Data2: 1234958787
+    Data3: 1436829100
+    Data4: 607438931
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1912890418031352287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar
+  Guid:
+    Data1: -1845999639
+    Data2: 1108672439
+    Data3: 1100013471
+    Data4: 282870797
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1864843247745656428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 5
+  Guid:
+    Data1: 1642642298
+    Data2: 1229571009
+    Data3: 1413917058
+    Data4: 1289303139
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1575365866231488831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UISFX/ButtonClick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UISFX/ButtonClick
+  Guid:
+    Data1: 1089137949
+    Data2: 1333683187
+    Data3: -188064637
+    Data4: -445065934
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1551009350191616911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/TutorialLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/TutorialLvl1
+  Guid:
+    Data1: 371091453
+    Data2: 1169587685
+    Data3: -1683053173
+    Data4: 145437486
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1507825483975863015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/CutsceneLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/CutsceneLvl1
+  Guid:
+    Data1: 1808650510
+    Data2: 1122449347
+    Data3: 1989267335
+    Data4: -2005120914
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1372517651661617547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+  Guid:
+    Data1: -898870395
+    Data2: 1128906112
+    Data3: -1277167468
+    Data4: -144578355
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1199887339622069140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/DragPuzzle
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/DragPuzzle
+  Guid:
+    Data1: 968629653
+    Data2: 1265864964
+    Data3: -2117356625
+    Data4: -534042541
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1160279248473871358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 4
+  Guid:
+    Data1: 1786410205
+    Data2: 1313451169
+    Data3: -1076044122
+    Data4: 1088207176
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-955941957541134831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/WrongDrop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/WrongDrop
+  Guid:
+    Data1: 569137656
+    Data2: 1175411054
+    Data3: 1222355866
+    Data4: 713138601
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-883551393457387895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 3
+  Guid:
+    Data1: -1209484659
+    Data2: 1167025651
+    Data3: 145196705
+    Data4: -1419207998
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-526821139650773459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah
+  Guid:
+    Data1: -1966672642
+    Data2: 1235346764
+    Data3: -826515544
+    Data4: 1495527557
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-328689721547320347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/DropReset
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/DropReset
+  Guid:
+    Data1: 385323237
+    Data2: 1210597332
+    Data3: -1225516892
+    Data4: -586306158
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-220352160220451089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
+  Guid:
+    Data1: 552189662
+    Data2: 1234958787
+    Data3: 1436829100
+    Data4: 607438931
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-58785550682261566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/Trashbin
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/Trashbin
+  Guid:
+    Data1: 1663715245
+    Data2: 1203431878
+    Data3: -972986747
+    Data4: 1575574370
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 5503360945651142277}
+  - {fileID: 5744777503720007901}
+  EditorEvents:
+  - {fileID: 2163511570159810688}
+  - {fileID: 2029012050829379858}
+  - {fileID: 3752060289648580889}
+  - {fileID: -2120915812692625619}
+  - {fileID: 296431593738249682}
+  - {fileID: 4393954867365644848}
+  - {fileID: -6815609158558038349}
+  - {fileID: 7220389595861618755}
+  - {fileID: -1864843247745656428}
+  - {fileID: 5011881195222386923}
+  - {fileID: 8009753745382527594}
+  - {fileID: -5941156460230512819}
+  - {fileID: 4732576256932401909}
+  - {fileID: -4102645842623602386}
+  - {fileID: -1199887339622069140}
+  - {fileID: -4584941226968373694}
+  - {fileID: -5355603059882831239}
+  - {fileID: 938942209578392071}
+  - {fileID: -58785550682261566}
+  - {fileID: 6035633336732764065}
+  - {fileID: -4440398002655662363}
+  - {fileID: 2512857950414219136}
+  - {fileID: -2383763921411272266}
+  - {fileID: -5684477340914548752}
+  - {fileID: -220352160220451089}
+  - {fileID: -3417334988364304799}
+  - {fileID: -4514226994028878872}
+  - {fileID: -7120361453845892408}
+  - {fileID: -7565054208739443286}
+  - {fileID: 3980591595602996862}
+  - {fileID: -955941957541134831}
+  - {fileID: -1551009350191616911}
+  - {fileID: -526821139650773459}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 5744777503720007901}
+  StringsBanks:
+  - {fileID: 5503360945651142277}
+  cacheVersion: 131861
+  cacheTime: 639286292740310874
+  SerializableEventsDict:
+  - key: event:/VoiceOver/Dialogs/CutsceneLvl1
+    index: 0
+  - key: event:/SFX/UISFX/ButtonClick
+    index: 1
+  - key: event:/Music/MainMenu
+    index: 2
+  - key: event:/SFX/SFXLvl1/RightDrop
+    index: 3
+  - key: event:/VoiceOver/Gameplay/Benar/Benar 6
+    index: 4
+  - key: event:/VoiceOver/Gameplay/Salah/Salah 2
+    index: 5
+  - key: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-2
+    index: 6
+  - key: event:/VoiceOver/Gameplay/Benar/Benar 2
+    index: 7
+  - key: event:/VoiceOver/Gameplay/Salah/Salah 5
+    index: 8
+  - key: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
+    index: 9
+  - key: event:/SFX/SFXLvl1/OpenSack
+    index: 10
+  - key: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 4
+    index: 11
+  - key: event:/VoiceOver/Gameplay/Salah/Salah 3
+    index: 12
+  - key: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 5
+    index: 13
+  - key: event:/SFX/SFXLvl1/DragPuzzle
+    index: 14
+  - key: event:/SFX/SFXLvl1/FinishLevel
+    index: 15
+  - key: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
+    index: 16
+  - key: event:/VoiceOver/Gameplay/Benar/Benar 3
+    index: 17
+  - key: event:/SFX/SFXLvl1/Trashbin
+    index: 18
+  - key: event:/VoiceOver/Dialogs/EpilogLvl1
+    index: 19
+  - key: event:/VoiceOver/Gameplay/Benar/Benar 5
+    index: 20
+  - key: event:/Music/GameplayLvl1
+    index: 21
+  - key: event:/VoiceOver/Gameplay/Benar/Benar 4
+    index: 22
+  - key: event:/VoiceOver/Gameplay/Salah/Salah 4
+    index: 23
+  - key: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 2
+    index: 24
+  - key: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-1
+    index: 25
+  - key: event:/SFX/SFXLvl1/DropReset
+    index: 26
+  - key: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
+    index: 27
+  - key: event:/VoiceOver/Gameplay/Benar/Benar
+    index: 28
+  - key: event:/Music/Cutscene
+    index: 29
+  - key: event:/SFX/SFXLvl1/WrongDrop
+    index: 30
+  - key: event:/VoiceOver/Dialogs/TutorialLvl1
+    index: 31
+  - key: event:/VoiceOver/Gameplay/Salah/Salah
+    index: 32
+--- !u!114 &241306287520170180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 4
+  Guid:
+    Data1: -328982053
+    Data2: 1186154361
+    Data3: 1524876217
+    Data4: -1280115001
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &296431593738249682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 6
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 6
+  Guid:
+    Data1: 1529738317
+    Data2: 1284408465
+    Data3: 99565702
+    Data4: 2099895751
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &397892566109953201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MainMenu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MainMenu
+  Guid:
+    Data1: -333310169
+    Data2: 1306264745
+    Data3: 1837285567
+    Data4: 1722477533
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150099
+--- !u!114 &636472049612374704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/DragPuzzle
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/DragPuzzle
+  Guid:
+    Data1: 968629653
+    Data2: 1265864964
+    Data3: -2117356625
+    Data4: -534042541
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &813586826331104064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639286292740310874
+  FileSizes:
+  - Name: 
+    Value: 2320
+  Exists: 1
+--- !u!114 &938942209578392071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 3
+  Guid:
+    Data1: 1902763177
+    Data2: 1163980148
+    Data3: 218905776
+    Data4: 1549130676
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1142548855823945501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 5
+  Guid:
+    Data1: 1642642298
+    Data2: 1229571009
+    Data3: 1413917058
+    Data4: 1289303139
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1241577784222263317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 6
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 6
+  Guid:
+    Data1: 1529738317
+    Data2: 1284408465
+    Data3: 99565702
+    Data4: 2099895751
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1292769494649021300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah
+  Guid:
+    Data1: -1966672642
+    Data2: 1235346764
+    Data3: -826515544
+    Data4: 1495527557
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1327940838248046131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/CutsceneLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/CutsceneLvl1
+  Guid:
+    Data1: 1808650510
+    Data2: 1122449347
+    Data3: 1989267335
+    Data4: -2005120914
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1367163916640698798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/FinishLevel
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/FinishLevel
+  Guid:
+    Data1: -1595074919
+    Data2: 1230913015
+    Data3: -777214553
+    Data4: 1419189296
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1525929955529449451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/RightDrop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/RightDrop
+  Guid:
+    Data1: 1129183557
+    Data2: 1293065855
+    Data3: -854828102
+    Data4: -1529165433
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2029012050829379858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UISFX/ButtonClick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UISFX/ButtonClick
+  Guid:
+    Data1: 1089137949
+    Data2: 1333683187
+    Data3: -188064637
+    Data4: -445065934
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2163511570159810688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/CutsceneLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/CutsceneLvl1
+  Guid:
+    Data1: 1808650510
+    Data2: 1122449347
+    Data3: 1989267335
+    Data4: -2005120914
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2391889506532120932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-2
+  Guid:
+    Data1: 2088335722
+    Data2: 1275254077
+    Data3: -189146986
+    Data4: 804280141
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2512857950414219136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/GameplayLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/GameplayLvl1
+  Guid:
+    Data1: 1750266059
+    Data2: 1225447609
+    Data3: 1230929800
+    Data4: 1214623088
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150099
+--- !u!114 &2794614232116468049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 4
+  Guid:
+    Data1: -328982053
+    Data2: 1186154361
+    Data3: 1524876217
+    Data4: -1280115001
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2814741550370693741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/GameplayLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/GameplayLvl1
+  Guid:
+    Data1: 1750266059
+    Data2: 1225447609
+    Data3: 1230929800
+    Data4: 1214623088
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150099
+--- !u!114 &2943923890942536289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 6
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 6
+  Guid:
+    Data1: 1529738317
+    Data2: 1284408465
+    Data3: 99565702
+    Data4: 2099895751
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3131755912058034353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 3
+  Guid:
+    Data1: 1902763177
+    Data2: 1163980148
+    Data3: 218905776
+    Data4: 1549130676
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3412271681751039891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/WrongDrop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/WrongDrop
+  Guid:
+    Data1: 569137656
+    Data2: 1175411054
+    Data3: 1222355866
+    Data4: 713138601
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3752060289648580889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MainMenu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MainMenu
+  Guid:
+    Data1: -333310169
+    Data2: 1306264745
+    Data3: 1837285567
+    Data4: 1722477533
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150099
+--- !u!114 &3887577327681180655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-2
+  Guid:
+    Data1: 2088335722
+    Data2: 1275254077
+    Data3: -189146986
+    Data4: 804280141
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3980591595602996862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Cutscene
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Cutscene
+  Guid:
+    Data1: 1636343529
+    Data2: 1307380829
+    Data3: -1821134427
+    Data4: -836775759
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 163660
+--- !u!114 &4196961130645128786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639286292740290859
+  FileSizes: []
+  Exists: 1
+--- !u!114 &4212532310089961669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UISFX/ButtonClick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UISFX/ButtonClick
+  Guid:
+    Data1: 1089137949
+    Data2: 1333683187
+    Data3: -188064637
+    Data4: -445065934
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4393954867365644848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 2
+  Guid:
+    Data1: 315657063
+    Data2: 1083797950
+    Data3: -1488424315
+    Data4: 635372719
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4547438932525721320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/Trashbin
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/Trashbin
+  Guid:
+    Data1: 1663715245
+    Data2: 1203431878
+    Data3: -972986747
+    Data4: 1575574370
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4684349181732610855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/EpilogLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/EpilogLvl1
+  Guid:
+    Data1: 303546289
+    Data2: 1280814525
+    Data3: -1718529652
+    Data4: 998209865
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4732576256932401909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 3
+  Guid:
+    Data1: -1209484659
+    Data2: 1167025651
+    Data3: 145196705
+    Data4: -1419207998
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4997921104573130807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 5
+  Guid:
+    Data1: 1642642298
+    Data2: 1229571009
+    Data3: 1413917058
+    Data4: 1289303139
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5011881195222386923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
+  Guid:
+    Data1: -648776067
+    Data2: 1110513230
+    Data3: 1142830776
+    Data4: 423654308
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5060216190943915899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 5
+  Guid:
+    Data1: -1241688907
+    Data2: 1092221301
+    Data3: -598545240
+    Data4: 1750615055
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5097029372330585985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah
+  Guid:
+    Data1: -1966672642
+    Data2: 1235346764
+    Data3: -826515544
+    Data4: 1495527557
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5136204318936149990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 5
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 5
+  Guid:
+    Data1: -1241688907
+    Data2: 1092221301
+    Data3: -598545240
+    Data4: 1750615055
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5503360945651142277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639286292740310874
+  FileSizes:
+  - Name: 
+    Value: 2320
+  Exists: 1
+--- !u!114 &5512370950136900650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
+  Guid:
+    Data1: -648776067
+    Data2: 1110513230
+    Data3: 1142830776
+    Data4: 423654308
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5744777503720007901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639286292740290859
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5751790614080091117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/GameplayLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/GameplayLvl1
+  Guid:
+    Data1: 1750266059
+    Data2: 1225447609
+    Data3: 1230929800
+    Data4: 1214623088
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150099
+--- !u!114 &6035633336732764065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/EpilogLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/EpilogLvl1
+  Guid:
+    Data1: 303546289
+    Data2: 1280814525
+    Data3: -1718529652
+    Data4: 998209865
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6688944710784304561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639286292740290859
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6720203188039415287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah 3
+  Guid:
+    Data1: -648776067
+    Data2: 1110513230
+    Data3: 1142830776
+    Data4: 423654308
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6735604566795322414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/RightDrop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/RightDrop
+  Guid:
+    Data1: 1129183557
+    Data2: 1293065855
+    Data3: -854828102
+    Data4: -1529165433
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7220389595861618755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 2
+  Guid:
+    Data1: -1711542676
+    Data2: 1116738058
+    Data3: 356818579
+    Data4: -2032423194
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7314067258533883743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Benar/Benar 2
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Benar/Benar 2
+  Guid:
+    Data1: -1711542676
+    Data2: 1116738058
+    Data3: 356818579
+    Data4: -2032423194
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7490495891599594810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Dialogs/EpilogLvl1
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Dialogs/EpilogLvl1
+  Guid:
+    Data1: 303546289
+    Data2: 1280814525
+    Data3: -1718529652
+    Data4: 998209865
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7641883803082046310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/Salah/Salah 4
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/Salah/Salah 4
+  Guid:
+    Data1: 1786410205
+    Data2: 1313451169
+    Data3: -1076044122
+    Data4: 1088207176
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7945703844718936339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/BuangSampah/BuangSampah
+  Guid:
+    Data1: 304991900
+    Data2: 1326083029
+    Data3: -157133900
+    Data4: 48857373
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8009753745382527594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/OpenSack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/OpenSack
+  Guid:
+    Data1: 1037634432
+    Data2: 1167868240
+    Data3: 1641420476
+    Data4: 1000006003
+  Banks:
+  - {fileID: 5744777503720007901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8245683977232819047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFXLvl1/OpenSack
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFXLvl1/OpenSack
+  Guid:
+    Data1: 1037634432
+    Data2: 1167868240
+    Data3: 1641420476
+    Data4: 1000006003
+  Banks:
+  - {fileID: 4196961130645128786}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8749479472435698838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceOver/Gameplay/WinLevel/FinishLVl1-3
+  Guid:
+    Data1: -1895007512
+    Data2: 1195962125
+    Data3: 1398888089
+    Data4: 217325372
+  Banks:
+  - {fileID: 6688944710784304561}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

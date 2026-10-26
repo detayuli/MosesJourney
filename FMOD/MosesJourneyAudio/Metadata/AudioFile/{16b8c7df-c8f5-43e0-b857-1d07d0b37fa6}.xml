@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{16b8c7df-c8f5-43e0-b857-1d07d0b37fa6}">
+		<property name="assetPath">
+			<value>VoiceOver/VOLvl1/EpilogLvl1.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>20.662857142857142</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b91ab06f-47ad-40b0-82d9-bd95f7c8f007}</destination>
+		</relationship>
+	</object>
+</objects>

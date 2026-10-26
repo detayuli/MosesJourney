@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{3a8b33a2-f88d-45a8-bd8d-c45cdf350a15}">
+		<property name="assetPath">
+			<value>VoiceOver/VOLvl1/GameplayVO/BuangSampah/BuangSampahAudacity (mp3cut.net) (4).mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4889795918367348</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b91ab06f-47ad-40b0-82d9-bd95f7c8f007}</destination>
+		</relationship>
+	</object>
+</objects>

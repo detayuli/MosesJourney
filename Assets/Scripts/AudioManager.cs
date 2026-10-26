@@ -1,42 +1,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
+using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
-    [SerializeField] AudioSource musicSource, sfxSource, voiceOverSource;
-
-    [System.Serializable]
-    public class SoundEffect
-    {
-        public string sfxName;
-        public AudioClip clip;
-    }
-
-    [System.Serializable]
-    public class VoiceOverData
-    {
-        public string voName;
-        public AudioClip clip;
-    }
-
     [System.Serializable]
     public class SceneMusicMapping
     {
         public string musicName;
-        public AudioClip musicClip;
+        public EventReference musicEvent;
         public List<string> sceneNames;
     }
 
-    [SerializeField] List<SoundEffect> sfxList = new();
-    [SerializeField] List<VoiceOverData> voiceOverList = new();
-    [SerializeField] List<SceneMusicMapping> sceneMusicMappings = new();
+    [Header("Scene BGM Setup")]
+    [SerializeField] private List<SceneMusicMapping> sceneMusicMappings = new();
 
-    readonly Dictionary<string, AudioClip> sfxDict = new();
-    readonly Dictionary<string, AudioClip> voDict = new();
-    readonly Dictionary<string, AudioClip> sceneMusicDict = new();
+    private readonly Dictionary<string, EventReference> sceneMusicDict = new();
+    private EventInstance currentMusicInstance;
+    private EventInstance currentVOInstance;
+    private EventReference currentMusicEvent;
 
     void Awake()
     {
@@ -49,30 +35,29 @@ public class AudioManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        InitializeDictionaries();
+        InitializeMusicDictionary();
         SceneManager.activeSceneChanged += OnSceneChanged;
+
+        // Panggil langsung di Awake biar scene pertama langsung bunyi
         PlayMusicInCurrentScene();
     }
 
-    void OnDestroy() => SceneManager.activeSceneChanged -= OnSceneChanged;
-
-    void InitializeDictionaries()
+    void OnDestroy()
     {
-        foreach (var s in sfxList)
-            if (!string.IsNullOrEmpty(s.sfxName) && s.clip)
-                sfxDict[s.sfxName] = s.clip;
+        SceneManager.activeSceneChanged -= OnSceneChanged;
+        StopMusic();
+        StopVoiceOver();
+    }
 
-        foreach (var v in voiceOverList)
-            if (!string.IsNullOrEmpty(v.voName) && v.clip)
-                voDict[v.voName] = v.clip;
-
+    void InitializeMusicDictionary()
+    {
         foreach (var m in sceneMusicMappings)
         {
-            if (!m.musicClip) continue;
+            if (m.musicEvent.IsNull) continue;
 
             foreach (var scene in m.sceneNames)
                 if (!string.IsNullOrEmpty(scene))
-                    sceneMusicDict[scene] = m.musicClip;
+                    sceneMusicDict[scene] = m.musicEvent;
         }
     }
 
@@ -80,57 +65,70 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusicInCurrentScene()
     {
-        if (!musicSource) return;
-
         string scene = SceneManager.GetActiveScene().name;
 
-        if (sceneMusicDict.TryGetValue(scene, out var clip))
+        if (sceneMusicDict.TryGetValue(scene, out var musicEvent))
         {
-            if (musicSource.clip == clip && musicSource.isPlaying) return;
+            if (currentMusicEvent.Path == musicEvent.Path && currentMusicInstance.isValid()) return;
 
-            musicSource.clip = clip;
-            musicSource.loop = true;
-            musicSource.Play();
+            StopMusic();
+
+            currentMusicEvent = musicEvent;
+            currentMusicInstance = RuntimeManager.CreateInstance(musicEvent);
+            currentMusicInstance.start();
         }
         else
         {
-            musicSource.Stop();
-            musicSource.clip = null;
+            StopMusic();
         }
     }
 
-    public void PlaySFX(string name)
+    public void StopMusic()
     {
-        if (sfxSource && sfxDict.TryGetValue(name, out var clip))
-            sfxSource.PlayOneShot(clip);
-        else if (sfxSource)
-            Debug.LogWarning($"[AudioManager] SFX '{name}' tidak ditemukan.");
+        if (currentMusicInstance.isValid())
+        {
+            currentMusicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            currentMusicInstance.release();
+            currentMusicEvent = default;
+        }
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlaySFX(string eventPath)
     {
-        if (sfxSource && clip) sfxSource.PlayOneShot(clip);
+        if (!string.IsNullOrEmpty(eventPath))
+            RuntimeManager.PlayOneShot(eventPath);
     }
 
-    public void PlayVoiceOver(string name)
+    public void PlaySFX(EventReference sfxEvent)
     {
-        if (voDict.TryGetValue(name, out var clip))
-            PlayVoiceOver(clip);
-        else
-            Debug.LogWarning($"[AudioManager] Voice Over '{name}' tidak ditemukan.");
+        if (!sfxEvent.IsNull)
+            RuntimeManager.PlayOneShot(sfxEvent);
     }
 
-    public void PlayVoiceOver(AudioClip clip)
+    public void PlayVoiceOver(string eventPath)
     {
-        if (!voiceOverSource || !clip) return;
+        if (string.IsNullOrEmpty(eventPath)) return;
 
-        voiceOverSource.Stop();
-        voiceOverSource.clip = clip;
-        voiceOverSource.Play();
+        StopVoiceOver();
+        currentVOInstance = RuntimeManager.CreateInstance(eventPath);
+        currentVOInstance.start();
+    }
+
+    public void PlayVoiceOver(EventReference voEvent)
+    {
+        if (voEvent.IsNull) return;
+
+        StopVoiceOver();
+        currentVOInstance = RuntimeManager.CreateInstance(voEvent);
+        currentVOInstance.start();
     }
 
     public void StopVoiceOver()
     {
-        if (voiceOverSource) voiceOverSource.Stop();
+        if (currentVOInstance.isValid())
+        {
+            currentVOInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            currentVOInstance.release();
+        }
     }
 }

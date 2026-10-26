@@ -61,8 +61,10 @@ public class SackManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (tutorialUIPanel != null && tutorialUIPanel.activeInHierarchy)
-            return;
+        if (LevelIntroManager.Instance != null && LevelIntroManager.Instance.IsIntroActive)
+            {
+                return;
+            }
 
         if (hasActivePiece || IsLevelComplete)
             return;

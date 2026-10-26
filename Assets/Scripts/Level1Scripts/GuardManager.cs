@@ -15,7 +15,9 @@ public class DialogueVOData
 {
     [TextArea(2, 4)]
     public string text;
-    public string voName; // Tinggal isi string nama VO sesuai di AudioManager (misal: "Salah1", "Benar4")
+    
+    [Tooltip("Isi dengan FMOD Event Path, contoh: event:/VoiceOver/VOLvl1/Salah1")]
+    public string voEventPath; 
 }
 
 public class GuardManager : MonoBehaviour
@@ -95,16 +97,16 @@ public class GuardManager : MonoBehaviour
         lastIndex = randomIndex;
         DialogueVOData selectedData = list[randomIndex];
 
-        // 1. Update Teks UI
+        // 1. Update Teks UI Dialogue
         if (dialogueText != null)
         {
             dialogueText.text = selectedData.text;
         }
 
-        // 2. Dipanggil via Vo Name string ke AudioManager
-        if (!string.IsNullOrEmpty(selectedData.voName))
+        // 2. Memutar VoiceOver FMOD menggunakan Path Event
+        if (!string.IsNullOrEmpty(selectedData.voEventPath))
         {
-            AudioManager.Instance?.PlayVoiceOver(selectedData.voName);
+            AudioManager.Instance?.PlayVoiceOver(selectedData.voEventPath);
         }
     }
 }

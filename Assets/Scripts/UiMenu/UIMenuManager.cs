@@ -84,7 +84,7 @@ public class UIMenumanager : MonoBehaviour
     {
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.PlaySFX("ClickButton");
+            AudioManager.Instance.PlaySFX("event:/SFX/UISFX/ButtonClick");
         }
     }
 

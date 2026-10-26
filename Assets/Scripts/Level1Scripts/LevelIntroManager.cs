@@ -9,7 +9,6 @@ public class LevelIntroManager : MonoBehaviour
     [SerializeField] private GameObject tutorialUIPanel;
     [SerializeField] private GameObject GuardTutorialUI;
     [SerializeField] private GameObject GuardUI;
-    [SerializeField] private GameObject karung;
 
     [Header("Intro Configuration")]
     [SerializeField] private string introVOName;
@@ -38,8 +37,6 @@ public class LevelIntroManager : MonoBehaviour
         if (tutorialUIPanel != null) tutorialUIPanel.SetActive(false);
         if (GuardTutorialUI != null) GuardTutorialUI.SetActive(true);
         if (GuardUI != null) GuardUI.SetActive(false);
-        if (karung != null) karung.SetActive(false);
-
         // 2. Putar VO via AudioManager
         if (!string.IsNullOrEmpty(introVOName))
         {
@@ -70,9 +67,8 @@ public class LevelIntroManager : MonoBehaviour
             tutorialUIPanel.SetActive(false);
             if (GuardTutorialUI != null) GuardTutorialUI.SetActive(false);
             if (GuardUI != null) GuardUI.SetActive(true);
-            if (karung != null) karung.SetActive(true);
             
-            AudioManager.Instance?.PlaySFX("ClickButton");
+            AudioManager.Instance?.PlaySFX("event:/SFX/UISFX/ButtonClick");
         }
 
         // Tandai intro selesai, gameplay di-unlock!
