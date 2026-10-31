@@ -1506,7 +1506,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 5503360945651142277}
   cacheVersion: 131861
-  cacheTime: 639286292740310874
+  cacheTime: 639287082887388135
   SerializableEventsDict:
   - key: event:/VoiceOver/Dialogs/CutsceneLvl1
     index: 0
@@ -2518,7 +2518,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639286292740310874
+  lastModified: 639287082887388135
   FileSizes:
   - Name: 
     Value: 2320
@@ -2565,7 +2565,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639286292740290859
+  lastModified: 639287082887367862
   FileSizes: []
   Exists: 1
 --- !u!114 &5751790614080091117

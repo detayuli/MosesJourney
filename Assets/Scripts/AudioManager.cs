@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
     private readonly Dictionary<string, EventReference> sceneMusicDict = new();
     private EventInstance currentMusicInstance;
     private EventInstance currentVOInstance;
-    private EventReference currentMusicEvent;
+   private FMOD.GUID currentMusicGuid;
 
     void Awake()
     {
@@ -69,11 +69,16 @@ public class AudioManager : MonoBehaviour
 
         if (sceneMusicDict.TryGetValue(scene, out var musicEvent))
         {
-            if (currentMusicEvent.Path == musicEvent.Path && currentMusicInstance.isValid()) return;
+            // Jangan restart musik jika event yang sama masih berjalan
+            if (currentMusicGuid.Equals(musicEvent.Guid) &&
+                currentMusicInstance.isValid())
+            {
+                return;
+            }
 
             StopMusic();
 
-            currentMusicEvent = musicEvent;
+            currentMusicGuid = musicEvent.Guid;
             currentMusicInstance = RuntimeManager.CreateInstance(musicEvent);
             currentMusicInstance.start();
         }
@@ -87,10 +92,15 @@ public class AudioManager : MonoBehaviour
     {
         if (currentMusicInstance.isValid())
         {
-            currentMusicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            currentMusicInstance.stop(
+                FMOD.Studio.STOP_MODE.ALLOWFADEOUT
+            );
+
             currentMusicInstance.release();
-            currentMusicEvent = default;
+            currentMusicInstance.clearHandle();
         }
+
+        currentMusicGuid = default;
     }
 
     public void PlaySFX(string eventPath)
@@ -127,8 +137,12 @@ public class AudioManager : MonoBehaviour
     {
         if (currentVOInstance.isValid())
         {
-            currentVOInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            currentVOInstance.stop(
+                FMOD.Studio.STOP_MODE.IMMEDIATE
+            );
+
             currentVOInstance.release();
+            currentVOInstance.clearHandle();
         }
     }
 }
